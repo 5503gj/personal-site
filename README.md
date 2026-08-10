@@ -5,6 +5,7 @@
 
 🌐 **GitHub：** https://github.com/5503gj
 🏸 **ShuttleKit：** https://github.com/5503gj/shuttlekit
+🎨 **Photo Style Gallery：** https://github.com/5503gj/photo-style-gallery
 🖥️ **在线主页：** https://5503gj.github.io/personal-site/
 📄 **简历下载：** [resume/郭嘉辉-个人简历.md](resume/郭嘉辉-个人简历.md)
 
@@ -19,7 +20,11 @@ personal-site/
 │   ├── css/style.css       # 样式（渐变 Hero、玻璃卡片、响应式、打印样式）
 │   └── js/main.js          # 交互（滚动淡入、移动端菜单、返回顶部、导航高亮）
 ├── resume/
-│   └── 郭嘉辉-个人简历.md   # 可下载的扩充版简历（含 GitHub 链接）
+│   ├── 郭嘉辉-个人简历.md   # 可下载的扩充版简历（含 GitHub 链接）
+│   ├── 郭嘉辉-产品运营简历.html
+│   ├── 郭嘉辉-数据运营简历.html
+│   ├── 郭嘉辉-软件测试简历.html
+│   └── 郭嘉辉-AI产品经理简历.html
 └── README.md
 ```
 
@@ -44,7 +49,8 @@ python -m http.server 8000
 ## 内容亮点
 
 - **ShuttleKit** 开源项目展示（羽毛球装备推荐 + 球场分析）。
-- 三段企业实习（数据分析 / 测试 / MES 实施）、一个实习项目与五个研究专题。
+- **Photo Style Gallery** 图片风格实验室（OpenCV 本地处理、简约线条与多风格滤镜）。
+- 两个公开开源项目、三段企业实习（数据分析 / 测试 / MES 实施）、一个实习项目与五个研究专题。
 - 技能矩阵**如实标注水平**（基础 / 能辅助），不夸大。
 - 产品运营、数据运营、AI 产品、功能测试四个岗位方向入口。
 - 已核对教育、实习、项目、论文、竞赛、证书、校园经历与联系方式；未补写无法核验的量化数据。
@@ -53,7 +59,7 @@ python -m http.server 8000
 
 - 页面可直接打开，无构建工具和第三方依赖。
 - 桌面端、移动端导航、滚动动画、返回顶部与打印样式均保留。
-- ShuttleKit 已链接到具体仓库；正式投递前请再核对论文署名、竞赛证书名称和实习岗位名称。
+- ShuttleKit 与 Photo Style Gallery 已链接到具体仓库；正式投递前请再核对论文署名、竞赛证书名称和实习岗位名称。
 
 ---
 © 2026 郭嘉辉 · 由数据科学驱动，用产品思维表达
