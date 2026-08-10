@@ -40,6 +40,7 @@ body {
 
 a { color: var(--brand); text-decoration: none; transition: color .2s ease; }
 a:hover { color: var(--brand-2); }
+a:focus-visible, button:focus-visible { outline: 3px solid rgba(14,165,233,.55); outline-offset: 3px; }
 
 .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
 
@@ -111,6 +112,14 @@ section { padding: 84px 0; }
 .hero-card .row span:first-child { color: rgba(255,255,255,.65); }
 .hero-card .row span:last-child { font-weight: 700; text-align: right; }
 
+/* ---------- 经历概览 ---------- */
+.proof-strip { background: #fff; border-bottom: 1px solid var(--line); }
+.proof-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+.proof-grid > div { display: flex; align-items: baseline; justify-content: center; gap: 10px; padding: 22px 10px; border-right: 1px solid var(--line); }
+.proof-grid > div:last-child { border-right: 0; }
+.proof-grid strong { color: var(--brand); font-size: 28px; line-height: 1; }
+.proof-grid span { color: var(--ink-soft); font-size: 13px; font-weight: 700; }
+
 /* ---------- 区块标题 ---------- */
 .sec-head { margin-bottom: 42px; }
 .sec-head .kicker { font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--brand); }
@@ -127,6 +136,15 @@ section { padding: 84px 0; }
 .fact-card .item { display: flex; gap: 10px; padding: 9px 0; font-size: 14.5px; border-bottom: 1px dashed var(--line); }
 .fact-card .item:last-child { border-bottom: 0; }
 .fact-card .item .ic { color: var(--brand); font-weight: 800; }
+
+/* ---------- 求职方向 ---------- */
+.role-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.role-card { position: relative; min-height: 230px; padding: 24px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-sm); transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+.role-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: #c7d2fe; }
+.role-no { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 10px; color: var(--brand); background: var(--grad-soft); font-weight: 800; font-size: 12px; letter-spacing: .5px; }
+.role-card h3 { margin: 18px 0 8px; font-size: 17px; line-height: 1.4; }
+.role-card p { color: var(--ink-soft); font-size: 14px; line-height: 1.7; }
+.role-card .tag-row { margin-top: 18px; }
 
 /* ---------- 时间线（教育） ---------- */
 .timeline { position: relative; padding-left: 28px; }
@@ -202,6 +220,12 @@ section { padding: 84px 0; }
 .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s ease; }
 .reveal.in { opacity: 1; transform: none; }
 
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  .reveal { opacity: 1; transform: none; }
+}
+
 /* 返回顶部 */
 .totop { position: fixed; right: 22px; bottom: 22px; width: 46px; height: 46px; border-radius: 50%; background: var(--grad); color: #fff; border: 0; font-size: 20px; cursor: pointer; box-shadow: var(--shadow-md); opacity: 0; pointer-events: none; transition: opacity .3s ease, transform .2s ease; z-index: 60; }
 .totop.show { opacity: 1; pointer-events: auto; }
@@ -213,6 +237,10 @@ section { padding: 84px 0; }
   .about-grid { grid-template-columns: 1fr; }
   .grid-2, .grid-3 { grid-template-columns: 1fr; }
   .skills-wrap { grid-template-columns: 1fr; }
+  .role-grid { grid-template-columns: repeat(2, 1fr); }
+  .proof-grid { grid-template-columns: repeat(2, 1fr); }
+  .proof-grid > div:nth-child(2) { border-right: 0; }
+  .proof-grid > div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
   .campus { grid-template-columns: 1fr; }
   .project-card.feature { grid-template-columns: 1fr; }
   .contact { padding: 40px 24px; }
@@ -220,6 +248,24 @@ section { padding: 84px 0; }
   .nav-links.open { display: flex; position: absolute; top: 64px; left: 0; right: 0; flex-direction: column; background: #fff; border-bottom: 1px solid var(--line); padding: 10px; box-shadow: var(--shadow-md); }
   .nav-toggle { display: block; }
   section { padding: 60px 0; }
+}
+
+@media (max-width: 560px) {
+  .wrap { padding-left: 18px; padding-right: 18px; }
+  .hero { padding: 86px 0 76px; }
+  .hero p.lead { font-size: 15.5px; }
+  .hero-card { padding: 22px; }
+  .proof-grid > div { flex-direction: column; align-items: center; gap: 5px; padding: 16px 6px; }
+  .proof-grid strong { font-size: 24px; }
+  .proof-grid span { font-size: 12px; text-align: center; }
+  .role-grid { grid-template-columns: 1fr; }
+  .sec-head { margin-bottom: 30px; }
+  .sec-head h2 { font-size: 26px; }
+  .card { padding: 20px; }
+  .card .top { flex-direction: column; }
+  .card .period { align-self: flex-start; }
+  .project-links, .contact .links { flex-direction: column; align-items: stretch; }
+  .project-links a, .contact .links a { justify-content: center; }
 }
 
 /* ---------- 打印（生成 PDF 简历） ---------- */

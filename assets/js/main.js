@@ -23,10 +23,16 @@
   var links = document.getElementById("navLinks");
   if (toggle && links) {
     toggle.addEventListener("click", function () {
-      links.classList.toggle("open");
+      var isOpen = links.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", String(isOpen));
+      toggle.setAttribute("aria-label", isOpen ? "关闭菜单" : "打开菜单");
     });
     links.addEventListener("click", function (e) {
-      if (e.target.tagName === "A") links.classList.remove("open");
+      if (e.target.tagName === "A") {
+        links.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.setAttribute("aria-label", "打开菜单");
+      }
     });
   }
 
@@ -53,8 +59,10 @@
       entries.forEach(function (e) {
         if (e.isIntersecting) {
           navAs.forEach(function (a) {
-            a.style.color = (a.getAttribute("href").slice(1) === e.target.id)
-              ? "var(--brand)" : "";
+            var active = a.getAttribute("href").slice(1) === e.target.id;
+            a.style.color = active ? "var(--brand)" : "";
+            if (active) a.setAttribute("aria-current", "page");
+            else a.removeAttribute("aria-current");
           });
         }
       });
