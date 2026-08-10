@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>郭嘉辉 - AI产品经理实习生简历</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  .resume {
+    max-width: 780px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 48px 56px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+  }
+  /* Header */
+  .header {
+    text-align: center;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+  }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 6px;
+  }
+  .header .subtitle {
+    font-size: 14px;
+    color: #2563eb;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .header .contact {
+    font-size: 12px;
+    color: #666;
+  }
+  .header .contact span { margin: 0 8px; }
+  /* Summary */
+  .summary {
+    background: #f0f7ff;
+    border-left: 3px solid #2563eb;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+    font-size: 13px;
+    color: #1e40af;
+    border-radius: 0 6px 6px 0;
+  }
+  .summary strong { color: #1e3a5f; }
+  /* Section */
+  .section { margin-bottom: 20px; }
+  .section-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #2563eb;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  /* Education */
+  .edu-item { margin-bottom: 10px; }
+  .edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+  }
+  .edu-school { font-size: 14px; font-weight: 600; }
+  .edu-tag { font-size: 12px; color: #2563eb; font-weight: 500; margin-left: 6px; }
+  .edu-time { font-size: 12px; color: #888; }
+  .edu-major { font-size: 13px; color: #555; margin-bottom: 2px; }
+  .edu-courses { font-size: 12px; color: #777; }
+  /* Skills */
+  .skill-category { margin-bottom: 8px; }
+  .skill-category .label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #374151;
+    display: inline-block;
+    min-width: 100px;
+  }
+  .skill-category .content {
+    font-size: 13px;
+    color: #555;
+  }
+  /* Experience */
+  .exp-item { margin-bottom: 14px; }
+  .exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+  }
+  .exp-title { font-size: 14px; font-weight: 600; }
+  .exp-title .role { color: #2563eb; }
+  .exp-time { font-size: 12px; color: #888; }
+  .exp-company { font-size: 13px; color: #666; margin-bottom: 4px; }
+  .exp-bullets { list-style: none; padding-left: 0; }
+  .exp-bullets li {
+    font-size: 13px;
+    color: #444;
+    padding-left: 14px;
+    position: relative;
+    margin-bottom: 3px;
+  }
+  .exp-bullets li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+    font-size: 11px;
+    top: 2px;
+  }
+  .exp-bullets li strong { color: #1e40af; }
+  .exp-bullets .highlight { color: #2563eb; font-weight: 600; }
+  /* Project */
+  .proj-item { margin-bottom: 12px; }
+  .proj-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+  }
+  .proj-name { font-size: 14px; font-weight: 600; }
+  .proj-tag { font-size: 11px; color: #fff; background: #2563eb; padding: 2px 8px; border-radius: 10px; margin-left: 8px; }
+  .proj-bullets { list-style: none; padding-left: 0; }
+  .proj-bullets li {
+    font-size: 13px;
+    color: #444;
+    padding-left: 14px;
+    position: relative;
+    margin-bottom: 3px;
+  }
+  .proj-bullets li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+    font-size: 11px;
+    top: 2px;
+  }
+  .proj-bullets li strong { color: #1e40af; }
+  /* Awards */
+  .awards { list-style: none; padding-left: 0; }
+  .awards li {
+    font-size: 13px;
+    color: #444;
+    padding-left: 14px;
+    position: relative;
+    margin-bottom: 4px;
+  }
+  .awards li::before {
+    content: "★";
+    position: absolute;
+    left: 0;
+    color: #f59e0b;
+    font-size: 11px;
+    top: 3px;
+  }
+  .awards li strong { color: #1e40af; }
+  /* Note */
+  .note {
+    background: #fef3c7;
+    border: 1px solid #fde68a;
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-top: 24px;
+    font-size: 12px;
+    color: #92400e;
+  }
+  .note strong { color: #78350f; }
+  @media print {
+    body { padding: 0; background: #fff; }
+    .resume { box-shadow: none; padding: 32px 40px; max-width: 100%; }
+    .note { display: none; }
+  }
+</style>
+</head>
+<body>
+<div class="resume">
+
+  <!-- Header -->
+  <div class="header">
+    <h1>郭嘉辉</h1>
+    <div class="subtitle">求职意向：AI产品经理实习生 / AI应用产品实习生</div>
+    <div class="contact">
+      <span>📞 188-1159-3886</span>
+      <span>✉️ Guo_gjh@126.com</span>
+      <span>🎓 2027届 · 数据科学硕士</span>
+    </div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary">
+    <strong>个人摘要：</strong>数据科学背景（211本科 + QS52硕士），具备 NLP、计算机视觉与大数据项目实战经验，发表中文核心期刊论文 1 篇。擅长<strong>利用 AI 工具进行需求分析、方案设计与原型验证</strong>，具备从数据采集到产品落地的全流程实践经验。3 段企业实习经历，涵盖工业数据分析、大数据平台开发与 MES 系统驻场实施，理解技术与业务的交叉需求。熟悉大模型能力边界与应用场景，具备 Prompt 工程与 RAG 流程设计经验，立志深耕 AI 产品方向。
+  </div>
+
+  <!-- Education -->
+  <div class="section">
+    <div class="section-title">教育背景</div>
+    <div class="edu-item">
+      <div class="edu-header">
+        <span><span class="edu-school">香港城市大学</span><span class="edu-tag">QS 52</span></span>
+        <span class="edu-time">2026.09 - 2027.06</span>
+      </div>
+      <div class="edu-major">数据科学（硕士）</div>
+      <div class="edu-courses">主修：统计机器学习、数据探索与可视化、数据科学研究项目、数据存储与检索</div>
+    </div>
+    <div class="edu-item">
+      <div class="edu-header">
+        <span><span class="edu-school">华中农业大学</span><span class="edu-tag">211</span></span>
+        <span class="edu-time">2022.09 - 2026.06</span>
+      </div>
+      <div class="edu-major">数据科学与大数据技术（本科）</div>
+      <div class="edu-courses">主修：机器学习、人工智能、数据结构、计算机组成与结构、大数据采集与储存、非结构化数据库</div>
+    </div>
+  </div>
+
+  <!-- Core Skills -->
+  <div class="section">
+    <div class="section-title">核心能力</div>
+    <div class="skill-category">
+      <span class="label">AI 产品思维</span>
+      <span class="content">理解大模型能力边界与应用场景划分，具备 Prompt Engineering、RAG 流程设计、AI 应用原型搭建经验；能将业务需求转化为 AI 产品方案</span>
+    </div>
+    <div class="skill-category">
+      <span class="label">AI 工具链</span>
+      <span class="content">熟练使用 AI 编程助手辅助全栈开发、AI 辅助数据分析与可视化、大模型 API 调用与工作流编排；掌握 AI 驱动的需求拆解与快速原型验证方法</span>
+    </div>
+    <div class="skill-category">
+      <span class="label">数据驱动决策</span>
+      <span class="content">具备数据采集、清洗、分析与可视化全流程经验，能将数据洞察转化为产品策略与业务建议</span>
+    </div>
+    <div class="skill-category">
+      <span class="label">项目协调</span>
+      <span class="content">3 段企业实习，涵盖需求沟通、系统实施、前后端联调与现场支持，具备跨部门协作与项目推进能力</span>
+    </div>
+    <div class="skill-category">
+      <span class="label">技术基础</span>
+      <span class="content">Python、MySQL、MongoDB、Linux 基本操作；了解 Sentence-BERT、YOLOv10、Mamba 等 NLP/CV 模型架构</span>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <div class="section">
+    <div class="section-title">科研与项目经历</div>
+
+    <div class="proj-item">
+      <div class="proj-header">
+        <span><span class="proj-name">Photo Style Gallery —— 图片风格实验室</span><span class="proj-tag">个人开源项目 · OpenCV / Gradio</span></span>
+      </div>
+      <ul class="proj-bullets">
+        <li>设计“图片上传—风格选择—参数调节—结果预览”的本地图像处理流程，落地简约线条、极简保真、编辑感抽象、胶片和海报等 8 种风格。</li>
+        <li>使用 Python / OpenCV 完成线稿化与风格滤镜处理，支持大图自动缩放；图片在本地处理，不上传原图。</li>
+        <li>配套可复用的 photo-to-lineart-skill、基础自动化测试和参数报告，形成可演示的 AI 产品原型。</li>
+      </ul>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-header">
+        <span><span class="proj-name">猫外周血白细胞自动检测系统</span><span class="proj-tag">YOLOv10 · 已发表论文</span></span>
+      </div>
+      <ul class="proj-bullets">
+        <li>基于 <strong>YOLOv10</strong> 构建猫外周血白细胞自动检测流程，完成 3 类白细胞（中性粒细胞 / 淋巴细胞 / 单核细胞）的目标检测，构建含 <strong>[XX]+</strong> 张标注样本的数据集</li>
+        <li>主导数据标注规范制定、模型训练验证与检测结果分析全流程，模型 mAP@0.5 达到 <strong>[0.XX]</strong></li>
+        <li>成果以第一/共一作者发表于《畜牧兽医学报》（中文核心期刊），验证了深度学习方法在兽医诊断场景的产品化潜力</li>
+      </ul>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-header">
+        <span><span class="proj-name">NLP 关系抽取研究 — 检索增强生成方案</span><span class="proj-tag">Sentence-BERT · RAG</span></span>
+      </div>
+      <ul class="proj-bullets">
+        <li>围绕关系抽取任务设计 <strong>检索增强生成（RAG）流程</strong>，结合 Sentence-BERT 语义向量进行候选句检索与相似度匹配</li>
+        <li>通过上下文证据检索增强模型输入，提升关系抽取任务中语义关联信息的利用能力，形成完整研究论文</li>
+        <li>深入理解 RAG 架构原理（文档切分 → 向量化 → 检索 → 上下文拼接 → 生成），可直接迁移至大模型应用产品设计</li>
+      </ul>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-header">
+        <span><span class="proj-name">人脸微表情识别研究</span><span class="proj-tag">Mamba 架构</span></span>
+      </div>
+      <ul class="proj-bullets">
+        <li>研究基于 <strong>Mamba 架构</strong>的微表情识别方法，围绕面部局部动态特征提取、时序建模与分类效果进行实验分析</li>
+        <li>对比不同特征提取策略对微表情识别精度的影响，积累模型评估与实验设计经验</li>
+      </ul>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-header">
+        <span><span class="proj-name">基于大数据的电影数据分析平台</span><span class="proj-tag">数据分析 · 可视化</span></span>
+      </div>
+      <ul class="proj-bullets">
+        <li>参与电影数据采集、清洗、分析与可视化全流程，完成平台架构设计与功能模块协作开发</li>
+        <li>利用数据分析工具完成票房趋势、评分分布等多维度分析，输出可视化报告</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Internship -->
+  <div class="section">
+    <div class="section-title">实习经历</div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <span class="exp-title">深圳市前海中软信息技术有限公司 ｜ <span class="role">MES系统开发实习生</span></span>
+        <span class="exp-time">2026.05 - 2026.08</span>
+      </div>
+      <div class="exp-company">客户项目：珠海志博信 MES 生产执行系统</div>
+      <ul class="exp-bullets">
+        <li>驻场参与 MES 系统开发与交付，独立完成 <strong>[X]+</strong> 个功能模块的前后端联调与数据库对接</li>
+        <li>深入车间调研设备运行与系统通信情况，定位并解决 <strong>[X]</strong> 类数据交互异常，保障系统在 <strong>[X]</strong> 条产线上线运行</li>
+        <li>利用 AI 工具辅助前后端代码开发与数据库连接调试，显著提升开发效率</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <span class="exp-title">北京中电科电子装备有限公司 ｜ <span class="role">数据分析实习生</span></span>
+        <span class="exp-time">2024.03 - 2024.06</span>
+      </div>
+      <ul class="exp-bullets">
+        <li>负责减薄机在碳化硅衬底段应用过程中的机器数据收集、清洗与整理，梳理 <strong>[XX]+</strong> 类工艺数据与故障信息</li>
+        <li>参与故障数据分析与数据模型建设，为设备应用场景的数据化管理提供数据基础</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <span class="exp-title">四川华迪信息技术有限公司 ｜ <span class="role">数据分析实习生</span></span>
+        <span class="exp-time">2025.04 - 2025.05</span>
+      </div>
+      <ul class="exp-bullets">
+        <li>参与电影数据分析项目，负责平台架构设计、功能测试与数据分析模块协作开发</li>
+        <li>围绕电影数据采集、整理、分析和可视化输出形成完整实践链路，提升数据产品化表达能力</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Awards -->
+  <div class="section">
+    <div class="section-title">竞赛与成果</div>
+    <ul class="awards">
+      <li><strong>"传智杯"全国IT技能大赛</strong> — 一等奖</li>
+      <li><strong>全国大学生人工智能竞赛</strong> — 二等奖</li>
+      <li><strong>全国大学生计算机系统能力大赛</strong> — 三等奖</li>
+      <li>全国大学生数学竞赛 — 三等奖 ｜ 全国大学生数学创新思维挑战赛 — 三等奖 ｜ 全国大学生算法设计编程挑战赛 — 优秀奖</li>
+      <li>发表论文：《基于深度学习的猫外周血白细胞自动识别方法建立及应用评价》—《畜牧兽医学报》（中文核心）</li>
+    </ul>
+  </div>
+
+  <!-- Note -->
+  <div class="note">
+    <strong>使用说明：</strong>简历中 <strong>[XX]</strong> / <strong>[X]</strong> / <strong>[0.XX]</strong> 标记处为需要你补充的真实数据（数据集大小、模块数量、mAP值等）。请回忆项目实际情况填入具体数字，切勿编造。投递前导出为 PDF，文件名建议：GuoJiahui_AI_Product_Intern.pdf
+  </div>
+
+</div>
+</body>
+</html>
