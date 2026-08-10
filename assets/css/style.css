@@ -281,3 +281,14 @@ section { padding: 84px 0; }
   a { color: #000; }
   .btn { display: none; }
 }
+
+/* ---------- 简历下载卡片 ---------- */
+.resume-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:14px}
+.resume-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;gap:10px;box-shadow:var(--shadow-sm);transition:transform .25s,box-shadow .25s}
+.resume-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md)}
+.resume-card .rc-no{display:inline-block;align-self:flex-start;font-size:12px;font-weight:700;color:#fff;background:var(--grad);padding:4px 12px;border-radius:999px;letter-spacing:.5px}
+.resume-card h3{font-size:17px;margin:2px 0;color:var(--ink)}
+.resume-card p{color:var(--ink-soft);font-size:14px;flex:1;line-height:1.6}
+.resume-card .btn{margin-top:8px;text-align:center}
+.resume-card.full{background:var(--bg-soft);border-style:dashed}
+@media (max-width:560px){.resume-grid{grid-template-columns:1fr}}
