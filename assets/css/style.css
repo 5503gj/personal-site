@@ -181,6 +181,7 @@ section { padding: 84px 0; }
 
 .project-card { position: relative; overflow: hidden; }
 .project-card.feature { grid-column: 1 / -1; display: grid; grid-template-columns: 1.1fr 1fr; gap: 26px; align-items: center; background: linear-gradient(135deg, #ffffff, #f3f6ff); border-color: #dbe4ff; }
+.lineart-project { border-color: #f5d0a6; background: linear-gradient(135deg, #ffffff, #fffaf3); }
 .project-card.feature .visual { background: var(--grad); border-radius: 16px; min-height: 180px; position: relative; overflow: hidden; box-shadow: var(--shadow-md); }
 .project-card.feature .visual::after { content: ""; position: absolute; inset: 0; background-image: radial-gradient(rgba(255,255,255,.18) 1px, transparent 1px); background-size: 16px 16px; }
 .project-card.feature .visual .badge2 { position: absolute; left: 18px; bottom: 16px; color: #fff; font-weight: 800; font-size: 15px; letter-spacing: .5px; }
@@ -281,3 +282,14 @@ section { padding: 84px 0; }
   a { color: #000; }
   .btn { display: none; }
 }
+
+/* ---------- 简历下载卡片 ---------- */
+.resume-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:14px}
+.resume-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;gap:10px;box-shadow:var(--shadow-sm);transition:transform .25s,box-shadow .25s}
+.resume-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md)}
+.resume-card .rc-no{display:inline-block;align-self:flex-start;font-size:12px;font-weight:700;color:#fff;background:var(--grad);padding:4px 12px;border-radius:999px;letter-spacing:.5px}
+.resume-card h3{font-size:17px;margin:2px 0;color:var(--ink)}
+.resume-card p{color:var(--ink-soft);font-size:14px;flex:1;line-height:1.6}
+.resume-card .btn{margin-top:8px;text-align:center}
+.resume-card.full{background:var(--bg-soft);border-style:dashed}
+@media (max-width:560px){.resume-grid{grid-template-columns:1fr}}
