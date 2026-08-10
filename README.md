@@ -5,6 +5,7 @@
 
 🌐 **GitHub：** https://github.com/5503gj
 🏸 **ShuttleKit：** https://github.com/5503gj/shuttlekit
+🖥️ **在线主页：** https://5503gj.github.io/personal-site/
 📄 **简历下载：** [resume/郭嘉辉-个人简历.md](resume/郭嘉辉-个人简历.md)
 
 ## 这个仓库是什么
