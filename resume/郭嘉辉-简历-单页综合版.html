@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>郭嘉辉 - 单页综合简历（产品/数据/AI 方向）</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #fff; }
+  body {
+    font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+    color: #1f2937;
+    font-size: 10.5px;
+    line-height: 1.32;
+    width: 210mm;
+    margin: 0 auto;
+    padding: 9mm 11mm 7mm;
+  }
+  /* 标题区 */
+  .top { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1.5px solid #2563eb; padding-bottom: 4px; margin-bottom: 5px; }
+  .top .name { font-size: 21px; font-weight: 700; color: #111827; letter-spacing: 1px; }
+  .top .intent { font-size: 11px; color: #2563eb; font-weight: 600; }
+  .top .right { text-align: right; font-size: 9.5px; color: #4b5563; }
+  .top .right a { color: #2563eb; text-decoration: none; }
+  /* 摘要 */
+  .summary { font-size: 10px; color: #374151; background: #f0f7ff; border-left: 2.5px solid #2563eb; padding: 4px 8px; margin-bottom: 6px; border-radius: 0 3px 3px 0; }
+  /* 区块 */
+  .sec { margin-bottom: 6px; }
+  .sec-t { font-size: 11.5px; font-weight: 700; color: #2563eb; border-bottom: 1px solid #e5e7eb; padding-bottom: 2px; margin-bottom: 3px; letter-spacing: .5px; }
+  .row { margin-bottom: 4px; }
+  .row-h { display: flex; justify-content: space-between; align-items: baseline; }
+  .row-h .t { font-size: 10.5px; font-weight: 600; color: #111827; }
+  .row-h .t .tag { color: #2563eb; font-weight: 500; }
+  .row-h .time { font-size: 9.5px; color: #9ca3af; }
+  .row .sub { font-size: 9.8px; color: #6b7280; margin: 1px 0 1px; }
+  ul { list-style: none; }
+  ul li { font-size: 10px; color: #374151; padding-left: 11px; position: relative; margin-bottom: 1px; }
+  ul li::before { content: "·"; position: absolute; left: 2px; color: #2563eb; font-weight: 700; }
+  ul li b { color: #1e3a8a; }
+  .two-col { display: flex; gap: 14px; }
+  .two-col > div { flex: 1; }
+  .skills { font-size: 9.8px; color: #374151; }
+  .skills b { color: #1e3a8a; }
+  .awards { font-size: 9.8px; color: #374151; }
+  .awards span { display: inline-block; margin-right: 8px; }
+  .awards b { color: #1e3a8a; }
+  @page { size: A4; margin: 0; }
+  @media print {
+    body { width: auto; margin: 0; padding: 8mm 10mm 6mm; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="top">
+    <div>
+      <div class="name">郭嘉辉</div>
+      <div class="intent">求职意向：产品运营 / 数据运营 / AI 产品方向（可按岗位微调）</div>
+    </div>
+    <div class="right">
+      📞 188-1159-3886 ｜ ✉️ Guo_gjh@126.com<br>
+      🎓 2027 届 · 数据科学硕士 ｜ 🔗 <a href="https://github.com/5503gj" target="_blank">github.com/5503gj</a>
+    </div>
+  </div>
+
+  <div class="summary">
+    数据科学背景（本科 211 + 港城大硕士），具备<strong>计算机视觉、NLP/RAG、数据分析与开源产品原型</strong>经验。独立完成 <strong>ShuttleKit</strong> 与 <strong>Photo Style Gallery</strong> 两个开源 AI 应用，熟悉"用户场景拆解→原型→验证"闭环；3 段实习覆盖 MES 实施、数据分析平台与功能测试，能协调技术与业务推进落地。了解 LLM/RAG/Agent/多模态的能力边界，不包装为算法工程师。
+  </div>
+
+  <div class="sec">
+    <div class="sec-t">教育背景</div>
+    <div class="row">
+      <div class="row-h"><span class="t">香港城市大学（QS 52） <span class="tag">硕士</span></span><span class="time">2026.09 - 2027.06</span></div>
+      <div class="sub">数据科学 ｜ 主修：统计机器学习、数据可视化、数据科学研究项目、数据存储与检索</div>
+    </div>
+    <div class="row">
+      <div class="row-h"><span class="t">华中农业大学（211） <span class="tag">本科</span></span><span class="time">2022.09 - 2026.06</span></div>
+      <div class="sub">数据科学与大数据技术 ｜ 主修：机器学习、人工智能、数据结构、大数据采集与储存、非结构化数据库 ｜ GPA 3.43/4.0 · 雅思 6.5</div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-t">实习经历</div>
+    <div class="row">
+      <div class="row-h"><span class="t">深圳市前海中软信息技术有限公司 <span class="tag">MES 系统实施实习生</span></span><span class="time">2026.05 - 2026.08</span></div>
+      <div class="sub">客户项目：珠海志博信 MES 生产执行系统</div>
+      <ul>
+        <li>梳理车间业务流程、用户反馈与系统异常，将现场问题转化为<b>功能需求与排查任务</b></li>
+        <li>借助 AI 编程工具完成<b>药水库、金属板、物理工厂、板材消耗</b>等模块的数据库连接与前端页面显示更新</li>
+        <li>参与前后端联调、页面数据展示优化与接口排查，积累 B 端<b>需求沟通、跨团队协作与上线支持</b>经验</li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="row-h"><span class="t">北京中电科电子装备有限公司 <span class="tag">数据分析实习生</span></span><span class="time">2024.03 - 2024.06</span></div>
+      <ul>
+        <li>负责减薄机在碳化硅衬底段应用的机器数据收集、清洗与整理，梳理工艺数据与故障信息</li>
+        <li>参与故障数据分析与数据模型建设，为设备<b>数据化管理与决策</b>提供基础</li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="row-h"><span class="t">四川华迪信息技术有限公司 <span class="tag">数据分析实习生</span></span><span class="time">2025.04 - 2025.05</span></div>
+      <ul>
+        <li>参与电影数据分析平台架构设计、功能测试与数据分析模块协作开发</li>
+        <li>形成"采集—整理—分析—可视化"完整链路，提升<b>数据产品化</b>表达能力</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-t">核心项目</div>
+    <div class="row">
+      <div class="row-h"><span class="t">ShuttleKit —— 羽毛球智能装备推荐与球场分析 <span class="tag">开源 · Python/OpenCV</span></span><span class="time">个人项目</span></div>
+      <ul>
+        <li>拆解装备选择、球场环境判断等场景，设计装备推荐、球场分析、球速测算模块</li>
+        <li>搭建知识库与规则推荐引擎，设计 LLM 顾问并考虑无 Key/缺失数据/错误推荐等异常；OpenCV 视觉功能 + <b>54 项单元测试</b></li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="row-h"><span class="t">Photo Style Gallery —— 图片风格实验室 <span class="tag">开源 · Python/OpenCV/Gradio</span></span><span class="time">个人项目</span></div>
+      <ul>
+        <li>设计"上传—风格选择—参数调节—预览"AI 图像交互流程，实现 8 种处理风格与本地处理</li>
+        <li>清晰区分<b>传统图像处理 vs 生成式 AI</b> 的能力边界，体现"什么该用 AI"的判断</li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="row-h"><span class="t">NLP 关系抽取与检索增强研究 <span class="tag">Sentence-BERT · RAG</span></span><span class="time">科研</span></div>
+      <ul>
+        <li>基于 Sentence-BERT 设计检索增强流程（切分—向量化—检索—证据筛选—拼接），理解 RAG 在准确性/幻觉间的权衡</li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="row-h"><span class="t">猫外周血白细胞自动检测系统 <span class="tag">YOLOv10 · 中文核心</span></span><span class="time">科研</span></div>
+      <ul>
+        <li>主导数据标注、模型训练验证全流程，<b>mAP@0.5 达 0.965</b>；以第一/共一作者发表于《畜牧兽医学报》</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="two-col">
+    <div class="sec">
+      <div class="sec-t">能力 & 工具</div>
+      <div class="skills">
+        <b>AI 产品：</b>场景分析、需求拆解、功能流程设计、AI 原型、Prompt/RAG 流程设计、AI 输出评估<br>
+        <b>技术理解：</b>了解 LLM/MLLM/Agent/多模态/向量检索/生成式 UI 边界<br>
+        <b>数据验证：</b>数据清洗、基础行为分析、功能测试、异常场景设计<br>
+        <b>工具：</b>Python、OpenCV、Sentence-BERT、Gradio、GitHub、AI 编程工具
+      </div>
+    </div>
+    <div class="sec">
+      <div class="sec-t">竞赛 & 成果</div>
+      <div class="awards">
+        <span><b>"传智杯"全国IT技能大赛</b> 一等奖</span>
+        <span><b>全国大学生人工智能竞赛</b> 二等奖</span>
+        <span>系统能力大赛 三等奖</span>
+        <span>数学竞赛 三等奖</span>
+        <span>数学创新 三等奖</span>
+        <span>算法设计 优秀奖</span>
+        <span><b>中文核心论文</b>《猫外周血白细胞自动识别》</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
