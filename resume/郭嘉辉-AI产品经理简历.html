@@ -134,6 +134,7 @@
   .proj-name { font-size: 14px; font-weight: 600; }
   .proj-tag { font-size: 11px; color: #fff; background: #2563eb; padding: 2px 8px; border-radius: 10px; margin-left: 8px; }
   .proj-tag.alt { background: #7c3aed; }
+  .proj-time { font-size: 12px; color: #2563eb; font-weight: 600; white-space: nowrap; margin-left: 10px; }
   .proj-bullets { list-style: none; padding-left: 0; }
   .proj-bullets li {
     font-size: 13px;
@@ -203,9 +204,9 @@
     </div>
   </div>
 
-  <!-- Summary：采用审阅后的版本（两个开源项目前置） -->
+  <!-- Summary：突出可落地的 AI 产品原型与真实能力边界 -->
   <div class="summary">
-    <strong>个人摘要：</strong>数据科学背景，具备计算机视觉、NLP、RAG 和数据分析项目经验。独立完成 <strong>Photo Style Gallery 图片风格实验室</strong> 和 <strong>ShuttleKit 羽毛球智能工具包</strong> 两个开源项目，能够使用 AI 工具辅助完成用户场景拆解、产品方案设计、原型开发和功能验证。了解 LLM、RAG、Agent、多模态等 AI 应用技术的基本原理与适用边界，具备将 AI 能力转化为可交互产品原型的实践经验。曾参与 MES 系统需求沟通、数据分析平台建设和功能测试，能够协调技术与业务推进产品落地。
+    <strong>个人摘要：</strong>数据科学背景，具备计算机视觉、NLP、RAG 和数据分析项目经验。独立完成 <strong>Photo Style Gallery、ShuttleKit、流芳 NPC 游戏和考公备考系统</strong> 四个公开作品，能够使用 AI 工具辅助完成用户场景拆解、功能流程设计、原型开发、测试验证和公网发布。了解 LLM、RAG、Agent、多模态等 AI 应用技术的基本原理与适用边界，关注 AI 是否真正解决用户问题，而不是包装成算法工程师。
   </div>
 
   <!-- Education -->
@@ -250,13 +251,14 @@
     </div>
   </div>
 
-  <!-- Projects：Photo Style Gallery + ShuttleKit 前置 -->
+  <!-- Projects：按截图风格突出项目名称、方向、时间与成果 -->
   <div class="section">
     <div class="section-title">科研与产品项目</div>
 
     <div class="proj-item">
       <div class="proj-header">
-        <span><span class="proj-name">Photo Style Gallery —— 图片风格实验室</span><span class="proj-tag alt">个人开源 · Python/OpenCV/Gradio</span></span>
+        <span><span class="proj-name">Photo Style Gallery —— 图片风格实验室</span><span class="proj-tag alt">AI 产品原型</span></span>
+        <span class="proj-time">2026.06 - 2026.08</span>
       </div>
       <ul class="proj-bullets">
         <li>从"用户希望快速将随手拍转换为具有辨识度的视觉风格"出发，设计"图片上传—风格选择—参数调节—结果预览"的 AI 图像产品交互流程</li>
@@ -268,13 +270,40 @@
 
     <div class="proj-item">
       <div class="proj-header">
-        <span><span class="proj-name">ShuttleKit —— 羽毛球智能装备推荐与球场分析工具包</span><span class="proj-tag">个人开源 · Python/OpenCV/推荐系统</span></span>
+        <span><span class="proj-name">ShuttleKit —— 羽毛球智能装备推荐与球场分析工具包</span><span class="proj-tag">AI 产品原型</span></span>
+        <span class="proj-time">2026.04 - 2026.08</span>
       </div>
       <ul class="proj-bullets">
         <li>围绕羽毛球爱好者在装备选择、球场环境判断和训练数据记录中的信息分散问题，拆解用户场景并设计装备推荐、球场分析和球速测算等功能模块</li>
         <li>搭建装备知识库和规则推荐引擎，并设计 LLM 顾问方案，考虑<strong>无 API Key、缺失数据和错误推荐</strong>等异常情况</li>
         <li>使用 OpenCV 完成场地线检测、灯光评估、球速测算和比赛统计等视觉功能，结合 <strong>54 项单元测试</strong>验证核心功能</li>
         <li>通过 GitHub 开源项目展示从需求分析、技术方案、功能实现到测试验证的完整产品闭环</li>
+      </ul>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-header">
+        <span><span class="proj-name">流芳 —— 情感剧本杀关系驱动互动体验</span><span class="proj-tag alt">AI 游戏化产品</span></span>
+        <span class="proj-time">2026.08 - 至今</span>
+      </div>
+      <ul class="proj-bullets">
+        <li>从情感本“不同人物关系需要不同语气”的需求出发，设计<strong>场景—说话者—对话对象—关系规则</strong>交互流程</li>
+        <li>整理 6 个可选角色、5 位核心 NPC 与四幕剧情状态，建立父子、兄弟、父女和同盟等关系差异化回复规则</li>
+        <li>接入本地 Qwen 小模型生成短回复，模型不可用时回退规则引擎；完成网页原型并上传 GitHub</li>
+        <li>公开仓库只保留原创代码与关系摘要，不上传剧本原文，体现内容版权边界和 AI 产品安全意识</li>
+      </ul>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-header">
+        <span><span class="proj-name">考公备考系统 —— 个人学习与错题复盘工作台</span><span class="proj-tag">AI 应用产品</span></span>
+        <span class="proj-time">2026.08 - 至今</span>
+      </div>
+      <ul class="proj-bullets">
+        <li>围绕“计划—学习记录—每日任务—错题分析—AI 答疑”设计个人备考闭环，完成看板、专注模式、题库和数据备份</li>
+        <li>使用 React、TypeScript 和 Vite 实现前端原型，数据默认保存在浏览器本地，降低后端和隐私成本</li>
+        <li>提供兼容 OpenAI 协议的 AI 配置入口，并准备微信小程序迁移脚手架，考虑从网页到多端的产品落地路径</li>
+        <li>通过 GitHub Actions 发布到公网，支持在线演示；项目地址：5503gj.github.io/kaogong-study-admin</li>
       </ul>
     </div>
 
