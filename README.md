@@ -9,6 +9,7 @@
 🎭 **剧本杀游戏：** https://github.com/5503gj/mystery-npc-lab
 📚 **考公备考系统：** https://github.com/5503gj/kaogong-study-admin
 🌐 **考公系统在线体验：** https://5503gj.github.io/kaogong-study-admin/
+📄 **PDF 综合简历：** https://5503gj.github.io/personal-site/resume/%E9%83%AD%E5%98%89%E8%BE%89%E7%9A%84%E7%AE%80%E5%8E%86.pdf
 🖥️ **在线主页：** https://5503gj.github.io/personal-site/
 📄 **简历下载：** [resume/郭嘉辉-个人简历.md](resume/郭嘉辉-个人简历.md)
 
