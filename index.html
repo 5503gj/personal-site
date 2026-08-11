@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>郭嘉辉 · 个人主页 / 在线简历</title>
-<meta name="description" content="郭嘉辉（数据科学硕士）个人主页：产品运营 / 数据向运营 / AI 产品方向，含 ShuttleKit、Photo Style Gallery 两个开源项目、5 段研究项目与 3 段企业实习。">
+<meta name="description" content="郭嘉辉（数据科学硕士）个人主页：产品运营 / 数据向运营 / AI 产品方向，含 ShuttleKit、Photo Style Gallery、流芳 NPC 游戏、考公备考系统等公开作品。">
 <meta name="theme-color" content="#1e1b4b">
 <meta property="og:title" content="郭嘉辉 · 个人主页 / 在线简历">
 <meta property="og:description" content="数据科学背景的产品运营、数据运营、AI 产品与功能测试候选人。">
@@ -63,7 +63,7 @@
     <div><strong>3</strong><span>段企业实习</span></div>
     <div><strong>9</strong><span>项竞赛荣誉</span></div>
     <div><strong>1</strong><span>篇中文核心论文</span></div>
-    <div><strong>1</strong><span>个持续维护的开源项目</span></div>
+    <div><strong>4</strong><span>个公开作品 / 开源项目</span></div>
   </div>
 </div>
 
@@ -214,7 +214,7 @@
     <div class="sec-head reveal">
       <div class="kicker">Projects</div>
       <h2>项目与研究经历</h2>
-      <p>这里完整保留我的 2 个公开开源项目、1 个实习项目与 5 个 AI / CV / NLP 研究专题；公开项目重点展示，研究内容按实际参与范围表述。</p>
+      <p>这里完整保留我的 4 个公开作品、1 个实习项目与 5 个 AI / CV / NLP 研究专题；公开项目重点展示，研究内容按实际参与范围表述。</p>
     </div>
     <div class="grid grid-2">
       <!-- ShuttleKit 特色卡 -->
@@ -250,6 +250,44 @@
           <div class="project-links">
             <a href="https://github.com/5503gj/photo-style-gallery" target="_blank" rel="noopener">★ Photo Style Gallery 仓库 ↗</a>
             <a href="#resume">下载方向简历</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 流芳 NPC 游戏特色卡 -->
+      <div class="card project-card feature reveal">
+        <div class="visual"><span class="badge2">流芳 · 关系驱动 NPC 游戏</span></div>
+        <div>
+          <h3>流芳 —— 情感剧本杀关系驱动互动体验</h3>
+          <div class="role">个人游戏化原型 · HTML / JavaScript / 本地 Qwen</div>
+          <ul>
+            <li>将人物关系、场景流程和角色语气整理为可交互的 NPC 对话系统，支持 6 个可选角色、5 位核心 NPC 与四幕流程。</li>
+            <li>设计“说话者 × 对话对象”的关系规则：同一个 NPC 面对不同人物会切换语气、信息边界和情感目标。</li>
+            <li>接入本地 Qwen 小模型生成短回复；模型不可用时自动回退到关系规则引擎，保证体验可运行。</li>
+            <li>公开仓库只保留原创交互代码与关系摘要，不上传剧本原文、扫描件或线索图片，兼顾作品展示与版权边界。</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/5503gj/mystery-npc-lab" target="_blank" rel="noopener">★ mystery-npc-lab 仓库 ↗</a>
+            <a href="https://github.com/5503gj/mystery-npc-lab" target="_blank" rel="noopener">查看实现说明</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 考公备考系统特色卡 -->
+      <div class="card project-card lineart-project reveal">
+        <div class="visual"><span class="badge2">Kaogong Study Admin · 在线备考系统</span></div>
+        <div>
+          <h3>考公备考系统 —— 从学习记录到错题复盘的个人工作台</h3>
+          <div class="role">个人产品项目 · React / TypeScript / Vite / 微信小程序脚手架</div>
+          <ul>
+            <li>围绕“计划—学习记录—每日任务—错题分析—AI 答疑”设计完整备考闭环，包含看板、专注模式、题库和数据备份。</li>
+            <li>默认使用浏览器本地数据，支持注册、登录、学习时长统计、错题录入与 JSON 导入导出，降低后端部署成本。</li>
+            <li>提供兼容 OpenAI 协议的 AI 配置入口，并配套微信小程序迁移脚手架，体现从网页原型到多端落地的产品思路。</li>
+            <li>已通过 GitHub Actions 发布到公网，可直接演示：数据按用户保存在本地浏览器，互不干扰。</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://5503gj.github.io/kaogong-study-admin/" target="_blank" rel="noopener">▶ 在线体验 ↗</a>
+            <a href="https://github.com/5503gj/kaogong-study-admin" target="_blank" rel="noopener">★ GitHub 仓库 ↗</a>
           </div>
         </div>
       </div>

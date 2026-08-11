@@ -6,6 +6,9 @@
 🌐 **GitHub：** https://github.com/5503gj
 🏸 **ShuttleKit：** https://github.com/5503gj/shuttlekit
 🎨 **Photo Style Gallery：** https://github.com/5503gj/photo-style-gallery
+🎭 **流芳 NPC 游戏：** https://github.com/5503gj/mystery-npc-lab
+📚 **考公备考系统：** https://github.com/5503gj/kaogong-study-admin
+🌐 **考公系统在线体验：** https://5503gj.github.io/kaogong-study-admin/
 🖥️ **在线主页：** https://5503gj.github.io/personal-site/
 📄 **简历下载：** [resume/郭嘉辉-个人简历.md](resume/郭嘉辉-个人简历.md)
 
@@ -50,7 +53,9 @@ python -m http.server 8000
 
 - **ShuttleKit** 开源项目展示（羽毛球装备推荐 + 球场分析）。
 - **Photo Style Gallery** 图片风格实验室（OpenCV 本地处理、简约线条与多风格滤镜）。
-- 两个公开开源项目、三段企业实习（数据分析 / 测试 / MES 实施）、一个实习项目与五个研究专题。
+- **流芳 NPC 游戏**（关系驱动对话、场景流程、本地小模型兜底）。
+- **考公备考系统**（React/Vite、学习闭环、AI 答疑、小程序迁移与公网部署）。
+- 四个公开作品、三段企业实习（数据分析 / 测试 / MES 实施）、一个实习项目与五个研究专题。
 - 技能矩阵**如实标注水平**（基础 / 能辅助），不夸大。
 - 产品运营、数据运营、AI 产品、功能测试四个岗位方向入口。
 - 已核对教育、实习、项目、论文、竞赛、证书、校园经历与联系方式；未补写无法核验的量化数据。
@@ -59,7 +64,7 @@ python -m http.server 8000
 
 - 页面可直接打开，无构建工具和第三方依赖。
 - 桌面端、移动端导航、滚动动画、返回顶部与打印样式均保留。
-- ShuttleKit 与 Photo Style Gallery 已链接到具体仓库；正式投递前请再核对论文署名、竞赛证书名称和实习岗位名称。
+- 四个项目均已链接到具体仓库，其中考公备考系统已提供公网体验地址；正式投递前请再核对论文署名、竞赛证书名称和实习岗位名称。
 
 ---
 © 2026 郭嘉辉 · 由数据科学驱动，用产品思维表达
