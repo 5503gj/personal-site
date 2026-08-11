@@ -6,7 +6,7 @@
 🌐 **GitHub：** https://github.com/5503gj
 🏸 **ShuttleKit：** https://github.com/5503gj/shuttlekit
 🎨 **Photo Style Gallery：** https://github.com/5503gj/photo-style-gallery
-🎭 **流芳 NPC 游戏：** https://github.com/5503gj/mystery-npc-lab
+🎭 **剧本杀游戏：** https://github.com/5503gj/mystery-npc-lab
 📚 **考公备考系统：** https://github.com/5503gj/kaogong-study-admin
 🌐 **考公系统在线体验：** https://5503gj.github.io/kaogong-study-admin/
 🖥️ **在线主页：** https://5503gj.github.io/personal-site/
@@ -53,7 +53,7 @@ python -m http.server 8000
 
 - **ShuttleKit** 开源项目展示（羽毛球装备推荐 + 球场分析）。
 - **Photo Style Gallery** 图片风格实验室（OpenCV 本地处理、简约线条与多风格滤镜）。
-- **流芳 NPC 游戏**（关系驱动对话、场景流程、本地小模型兜底）。
+- **剧本杀游戏**（多场景关系驱动对话、NPC 人设、场景流程、本地小模型兜底；《流芳》等情感本作为验证场景）。
 - **考公备考系统**（React/Vite、学习闭环、AI 答疑、小程序迁移与公网部署）。
 - 四个公开作品、三段企业实习（数据分析 / 测试 / MES 实施）、一个实习项目与五个研究专题。
 - 技能矩阵**如实标注水平**（基础 / 能辅助），不夸大。
