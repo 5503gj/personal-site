@@ -1,66 +1,23 @@
-# 郭嘉辉 · 个人主页 / 在线简历
+# 郭嘉辉 · AI 开发 / ML / LLM 作品集
 
-> 数据科学硕士（香港城市大学 QS52 · 华中农业大学 211）的个人主页与在线简历。
-> 求职方向：产品运营 / 用户运营（主）、数据商业分析向运营（王牌）、功能测试 / AI 产品（辅）。
+网站：https://5503gj.github.io/personal-site/
 
-🌐 **GitHub：** https://github.com/5503gj
-🏸 **ShuttleKit：** https://github.com/5503gj/shuttlekit
-🎨 **Photo Style Gallery：** https://github.com/5503gj/photo-style-gallery
-🎭 **剧本杀游戏：** https://github.com/5503gj/mystery-npc-lab
-📚 **考公备考系统：** https://github.com/5503gj/kaogong-study-admin
-🌐 **考公系统在线体验：** https://5503gj.github.io/kaogong-study-admin/
-📄 **PDF 综合简历：** https://5503gj.github.io/personal-site/resume/%E9%83%AD%E5%98%89%E8%BE%89%E7%9A%84%E7%AE%80%E5%8E%86.pdf
-🖥️ **在线主页：** https://5503gj.github.io/personal-site/
+本仓库主页已于 2026-10-25 使用提供的 AI 作品集替换，保留照片、项目筛选、详情弹窗与中文简历下载。HTML、CSS、JavaScript、图片与 PDF 均在仓库内，无 ChatGPT 登录或运行依赖。
 
-## 这个仓库是什么
+## 修改内容
 
-一个**纯静态、零依赖**的个人网站（无需构建工具），同时充当在线简历：
+- `index.html`：主页内容与项目卡片。
+- `script.js`：项目详情与分类筛选。
+- `style.css`：布局与移动适配。
+- `assets/guo-jiahui-ai-resume.pdf`：AI 求职简历，作品集链接已同步到 GitHub Pages。
+- `assets/portrait.jpg`：照片。
 
-```
-personal-site/
-├── index.html              # 主页 / 在线简历（单页，含滚动动画、响应式、打印友好）
-├── assets/
-│   ├── css/style.css       # 样式（渐变 Hero、玻璃卡片、响应式、打印样式）
-│   └── js/main.js          # 交互（滚动淡入、移动端菜单、返回顶部、导航高亮）
-├── resume/
-│   └── 郭嘉辉的简历.pdf    # 主页唯一的简历下载入口（其他文件为历史稿件）
-└── README.md
-```
+## 本地预览与部署
 
-## 本地预览
+`python -m http.server 8000 --bind 127.0.0.1`，打开 http://127.0.0.1:8000/ 。GitHub Pages 沿用 main 分支根目录。无需构建步骤。
 
-直接双击 `index.html` 即可在浏览器打开；或起一个本地服务器：
+## 信息边界与维护
 
-```bash
-python -m http.server 8000
-# 浏览器访问 http://localhost:8000
-```
+研究指标及实习经历来自提供的简历；未把候选记录数解释为性能提升。公开项目仍按原型阶段展示：Photo Style Gallery 为传统图像处理，学习工具包含规则答疑和兼容模型接口，ShuttleKit 尚未实现多客户端广播，NPC 尚未具备长期记忆和 RAG。
 
-## 部署到 GitHub Pages
-
-1. 在 GitHub 新建仓库（如 `personal-site` 或 `<用户名>.github.io`）。
-2. 把本目录内容推送上去（main 分支）。
-3. 仓库 Settings → Pages → Source 选择 `main` / `root` → Save。
-4. 几分钟后访问 `https://<用户名>.github.io/` （或仓库 Pages 给出的地址）。
-
-> 若仓库名为 `<用户名>.github.io`，即为用户页，直接生效；其他名字则作为项目页访问。
-
-## 内容亮点
-
-- **ShuttleKit** 开源项目展示（羽毛球装备推荐 + 球场分析）。
-- **Photo Style Gallery** 图片风格实验室（OpenCV 本地处理、简约线条与多风格滤镜）。
-- **剧本杀游戏**（多场景关系驱动对话、NPC 人设、场景流程、本地小模型兜底；《流芳》等情感本作为验证场景）。
-- **考公备考系统**（React/Vite、学习闭环、AI 答疑、小程序迁移与公网部署）。
-- 四个公开作品、三段企业实习（数据分析 / 测试 / MES 实施）、一个实习项目与五个研究专题。
-- 技能矩阵**如实标注水平**（基础 / 能辅助），不夸大。
-- 产品运营、数据运营、AI 产品、功能测试四个岗位方向介绍。
-- 已核对教育、实习、项目、论文、竞赛、证书、校园经历与联系方式；未补写无法核验的量化数据。
-
-## 更新后的核验清单
-
-- 页面可直接打开，无构建工具和第三方依赖。
-- 桌面端、移动端导航、滚动动画、返回顶部与打印样式均保留。
-- 四个项目均已链接到具体仓库，其中考公备考系统已提供公网体验地址；正式投递前请再核对论文署名、竞赛证书名称和实习岗位名称。
-
----
-© 2026 郭嘉辉 · 由数据科学驱动，用产品思维表达
+迁移已验证 320/390/855/1440 像素适配、筛选、6个详情弹窗、键盘关闭和焦点恢复、无JavaScript正文、PDF下载。旧版主页可通过 Git 历史查看。`resume/`、`assets/css/`、`assets/js/` 为原有历史材料，当前首页不使用。

@@ -1,513 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>郭嘉辉 · 个人主页 / 在线简历</title>
-<meta name="description" content="郭嘉辉（数据科学硕士）个人主页：产品运营 / 数据向运营 / AI 产品方向，含 ShuttleKit、Photo Style Gallery、剧本杀游戏、考公备考系统等公开作品。">
-<meta name="theme-color" content="#1e1b4b">
-<meta property="og:title" content="郭嘉辉 · 个人主页 / 在线简历">
-<meta property="og:description" content="数据科学背景的产品运营、数据运营、AI 产品与功能测试候选人。">
-<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>郭嘉辉｜AI 开发 · ML · LLM 作品集</title>
+  <meta name="description" content="郭嘉辉，香港城市大学数据科学硕士在读。探索检索增强、机器学习评估与 AI 应用开发，查看研究经历、开源项目与中文简历。">
+  <meta property="og:title" content="郭嘉辉｜从数据实验，到 AI 应用"><meta property="og:description" content="AI 开发 · Machine Learning · LLM Applications｜研究与公开代码">
+  <meta property="og:type" content="website"><meta property="og:url" content="https://5503gj.github.io/personal-site/">
+  <link rel="canonical" href="https://5503gj.github.io/personal-site/">
+  <link rel="icon" href="assets/favicon.svg"><link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
 </head>
 <body>
+<noscript><p class="noscript-note">当前已显示全部项目。启用 JavaScript 可使用方向筛选与项目详情；源码链接和简历下载仍可直接使用。</p></noscript>
+<a class="skip-link" href="#main">跳至正文</a>
+<header><a class="brand" href="#top"><span class="brand-mark">GJ</span><span>郭嘉辉<small>GUO JIAHUI</small></span></a>
+<nav aria-label="主导航"><a href="#projects">项目</a><a href="#experience">经历</a><a href="#about">关于</a><a class="nav-contact" href="#contact">联系我 <span>↗</span></a></nav></header>
+<main id="main">
+<section class="hero wrap" id="top">
+  <div class="hero-copy"><p class="eyebrow"><span class="signal"></span> AI DEVELOPMENT · ML · LLM</p>
+  <h1>从数据实验，<br>到 <span class="accent">AI 应用。</span></h1>
+  <p class="intro">你好，我是郭嘉辉。<br>数据科学硕士在读，关注检索增强、模型评估，<br class="desktop">以及 AI 在具体场景中的实现。</p>
+  <div class="actions"><a class="button primary" href="#projects">探索项目 <span>↓</span></a><a class="button outline" href="assets/guo-jiahui-ai-resume.pdf" download="郭嘉辉_AI开发_ML_LLM_求职简历.pdf">下载中文简历 <span>↗</span></a></div>
+  <div class="hero-note"><span>求职方向</span> AI 开发 / 机器学习 / LLM 应用</div></div>
+  <aside class="profile-panel">
+    <div class="profile-head"><span class="mono">PROFILE / 01</span><span class="status">硕士在读</span></div>
+    <div class="portrait-row"><img src="assets/portrait.jpg" width="98" height="116" alt="郭嘉辉的证件照"><div><h2>郭嘉辉</h2><p>Guo Jiahui</p><span>数据 → 模型 → 应用</span></div></div>
+    <div class="education-mini"><strong>香港城市大学</strong><span>数据科学 · 硕士研究生</span><small>2026.09 — 2027.06（预计）</small></div>
+    <div class="profile-lines"><div><span>当前关注</span><b>RAG / ML Evaluation</b></div><div><span>研究探索</span><b>Molecular AI</b></div><div><span>公开代码</span><a href="https://github.com/5503gj" target="_blank" rel="noopener noreferrer">@5503gj ↗</a></div></div>
+    <p class="panel-foot mono">BUILD · EVALUATE · ITERATE</p>
+  </aside>
+</section>
+<div class="focus-strip wrap"><span>01 <b>检索与上下文</b></span><span>02 <b>模型训练与评估</b></span><span>03 <b>应用与接口实现</b></span></div>
 
-<!-- 导航 -->
-<nav class="nav">
-  <div class="wrap">
-    <div class="brand"><span class="dot"></span>郭嘉辉</div>
-    <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false">☰</button>
-    <div class="nav-links" id="navLinks">
-      <a href="#about">关于</a>
-      <a href="#roles">方向</a>
-      <a href="#education">教育</a>
-      <a href="#experience">实习</a>
-      <a href="#projects">项目</a>
-      <a href="#awards">荣誉</a>
-      <a href="#skills">技能</a>
-      <a href="#campus">校园</a>
-      <a href="#resume">简历</a>
-      <a href="#contact">联系</a>
-    </div>
-  </div>
-</nav>
-
-<!-- Hero -->
-<header class="hero">
-  <div class="wrap">
-    <div>
-      <span class="badge">● 2027 届 · 数据科学硕士 · 求职中</span>
-      <h1>你好，我是 <span class="grad-text">郭嘉辉</span></h1>
-      <p class="lead">数据科学背景的产品 / 运营候选人，擅长把数据、用户反馈与技术能力翻译成可落地的业务动作。主攻 <strong>产品运营、数据向运营</strong>，也能做 <strong>AI 产品</strong> 与 <strong>功能测试</strong>。</p>
-      <div class="cta">
-        <a class="btn btn-primary" href="#contact">联系我 →</a>
-        <a class="btn btn-ghost" href="resume/郭嘉辉的简历.pdf" download>下载 PDF 简历 ↓</a>
-        <a class="btn btn-ghost" href="#projects">看项目</a>
-      </div>
-    </div>
-    <aside class="hero-card">
-      <div class="avatar">郭</div>
-      <h3>郭嘉辉 / Guo Jiahui</h3>
-      <div class="sub">产品运营 · 数据向运营 · AI 产品</div>
-      <div class="row"><span>学历</span><span>硕 · 港城大 QS52</span></div>
-      <div class="row"><span>本科</span><span>华农 211 · GPA 3.43</span></div>
-      <div class="row"><span>所在地</span><span>深圳 / 香港</span></div>
-      <div class="row"><span>GitHub</span><span>github.com/5503gj</span></div>
-      <div class="row"><span>邮箱</span><span>Guo_gjh@126.com</span></div>
-    </aside>
-  </div>
-</header>
-
-<div class="proof-strip" aria-label="经历概览">
-  <div class="wrap proof-grid">
-    <div><strong>3</strong><span>段企业实习</span></div>
-    <div><strong>9</strong><span>项竞赛荣誉</span></div>
-    <div><strong>1</strong><span>篇中文核心论文</span></div>
-    <div><strong>4</strong><span>个公开作品 / 开源项目</span></div>
-  </div>
-</div>
-
-<!-- 关于 -->
-<section id="about">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <div class="kicker">About</div>
-      <h2>关于我</h2>
-    </div>
-    <div class="about-grid">
-      <div class="about-text reveal">
-        <p>我是<strong>郭嘉辉</strong>，一名数据科学专业的应届硕士生。我的特别之处在于：我处在"业务岗里最懂技术逻辑"的中间地带——既能读懂数据、跑通一个算法原型，也能把它翻译成业务能用的产品与运营动作。</p>
-        <p>三段企业实习覆盖了<strong>工业数据分析、大数据平台协作与 MES 系统驻场实施</strong>；课余独立完成了 <strong>ShuttleKit</strong> 与 <strong>Photo Style Gallery</strong> 两个开源项目，并参与了 5 段 AI / CV / NLP 研究（含 1 篇中文核心期刊论文）。我把这些技术经历当作"理解业务与技术错位"的底气，而不是用来堆算法八股。</p>
-        <p>求职上我目标明确：以<strong>产品运营 / 用户运营</strong>为主投方向，辅以<strong>数据商业分析向运营</strong>作为隐藏王牌，也能胜任<strong>功能测试</strong>与谨慎冲刺<strong>AI 产品</strong>。我不擅长算法八股，但擅长把"数据 → 洞察 → 行动"这条链路讲明白、做出来。</p>
-      </div>
-      <div class="fact-card reveal">
-        <h4>速览</h4>
-        <div class="item"><span class="ic">▸</span><div><strong>求职方向</strong><br>产品运营 / 数据向运营（主）<br>功能测试 / AI 产品（辅）</div></div>
-        <div class="item"><span class="ic">▸</span><div><strong>实习经历</strong><br>3 段企业实习（数据分析 / 测试 / MES）</div></div>
-        <div class="item"><span class="ic">▸</span><div><strong>研究 / 项目</strong><br>2 个开源项目 + 5 段 AI/CV/NLP 研究</div></div>
-        <div class="item"><span class="ic">▸</span><div><strong>论文 / 竞赛</strong><br>中文核心 1 篇 · 9 项竞赛荣誉</div></div>
-        <div class="item"><span class="ic">▸</span><div><strong>学业</strong><br>本科 GPA 3.43/4.0 · 雅思 6.5</div></div>
-      </div>
-    </div>
-  </div>
+<section class="section wrap" id="projects">
+ <div class="section-head"><div><p class="eyebrow">SELECTED WORK</p><h2>让项目说明能力。</h2></div><p>从研究实验到公开原型，<br>看问题、方法与实现边界。</p></div>
+ <div class="filters" aria-label="按方向筛选项目"><button class="active" data-filter="all" aria-pressed="true">全部项目</button><button data-filter="llm" aria-pressed="false">LLM / RAG</button><button data-filter="ml" aria-pressed="false">机器学习</button><button data-filter="engineering" aria-pressed="false">应用工程</button><span id="result-count" aria-live="polite">7 个项目</span></div>
+ <div class="project-grid">
+  <article class="project featured" data-category="llm engineering">
+    <div class="project-label"><span class="mono">01 / LLM APPLICATION</span><span class="badge">公开源码 · 原型</span></div>
+    <h3>AI NPC 互动实验室</h3><p class="project-desc">把角色设定、关系与已知线索组织成上下文，让本地模型参与对话。</p>
+    <div class="pipeline" aria-label="NPC 对话流程示意"><div><span>INPUT</span><b>角色 / 场景 / 线索</b></div><i>↓</i><div><span>CONTEXT</span><b>关系规则 + 最近 8 条对话</b></div><i>↓</i><div class="model-node"><span>INFERENCE</span><b>Ollama · Qwen</b></div><div class="pipeline-result"><span>模型回复</span><span>不可用 → 规则回退</span></div></div>
+    <p class="caption">根据公开代码绘制的流程示意</p>
+    <div class="tags"><span>Python</span><span>Ollama</span><span>Context Design</span></div>
+    <div class="project-bottom"><button data-detail="npc">查看实现思路 <span>↗</span></button><a href="https://github.com/5503gj/mystery-npc-lab" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+  </article>
+  <article class="project cv-project" data-category="ml">
+    <div class="project-label"><span class="mono">02 / COMPUTER VISION</span><span class="badge">研究项目</span></div>
+    <h3>猫外周血白细胞<br>自动检测</h3><p class="project-desc">从图像处理、标注规范，到模型训练验证与结果分析。</p>
+    <div class="metric"><strong>0.965</strong><span>mAP@0.5</span></div>
+    <div class="mini-path"><span>图像处理</span><i>→</i><span>数据标注</span><i>→</i><span>训练验证</span></div>
+    <p class="metric-note">项目指标据个人简历；相关成果发表于《畜牧兽医学报》。</p>
+    <div class="tags"><span>Object Detection</span><span>Model Evaluation</span></div>
+    <div class="project-bottom"><button data-detail="cv">查看项目 <span>↗</span></button><span>2026.01 — 2026.07</span></div>
+  </article>
+  <article class="project nlp-project" data-category="llm ml">
+    <div class="project-label"><span class="mono">03 / RETRIEVAL</span><span class="badge">研究项目</span></div>
+    <h3>关系抽取与检索增强</h3><p class="project-desc">用 Sentence-BERT 检索相关上下文，补充关系抽取的信息基础，探索知识库问答。</p>
+    <div class="retrieval-viz"><span>Query</span><div><i></i><i></i><i></i></div><span>Context</span><b>→</b><span>Answer</span></div>
+    <div class="tags"><span>Sentence-BERT</span><span>RAG</span><span>NLP</span></div>
+    <div class="project-bottom"><button data-detail="nlp">查看方法与结果 <span>↗</span></button><span>2024 — 2025</span></div>
+  </article>
+  <article class="project dct-project" data-category="ml">
+    <div class="project-label"><span class="mono">04 / EXPERIMENTS</span><span class="badge">研究进行中</span></div>
+    <h3>分子图数据增强<br>复现与评估</h3><p class="project-desc">对照原方法、无增强与源图替换，关注生成变化与下游预测效果的关系。</p>
+    <div class="experiment-metrics"><div><b>3</b><span>数据集</span></div><div><b>5</b><span>随机种子</span></div><div><b>5,607</b><span>成功候选记录</span></div></div>
+    <p class="dataset-line mono">ESOL / Lipophilicity / FreeSolv</p>
+    <div class="project-bottom"><button data-detail="dct">查看实验设置 <span>↗</span></button><span>2026.09 — 至今</span></div>
+  </article>
+  <article class="project small-project" data-category="engineering llm">
+    <div class="project-label"><span class="mono">05 / PYTHON · API</span><span class="badge">公开源码 · MVP</span></div>
+    <h3>ShuttleKit</h3><p>模块化羽毛球分析工具。包含 FastAPI 接口、WebSocket 会话接口，以及器材规则推荐和可选 LLM 顾问；实时大屏广播仍待完善。</p>
+    <div class="tags"><span>FastAPI</span><span>WebSocket</span></div>
+    <div class="project-bottom"><button data-detail="shuttle">查看工程实现 <span>↗</span></button><a href="https://github.com/5503gj/shuttlekit" target="_blank" rel="noopener noreferrer">源码 ↗</a></div>
+  </article>
+  <article class="project small-project" data-category="engineering">
+    <div class="project-label"><span class="mono">06 / IMAGE PROCESSING</span><span class="badge">公开源码</span></div>
+    <h3>Photo Style Gallery</h3><p>本地图像处理工具。以 OpenCV 实现线稿、胶片等风格，提供 Gradio 界面、大图缩放与基础自动化测试。</p>
+    <div class="tags"><span>OpenCV</span><span>Gradio</span></div>
+    <div class="project-bottom"><button data-detail="photo">查看处理与测试 <span>↗</span></button><a href="https://github.com/5503gj/photo-style-gallery" target="_blank" rel="noopener noreferrer">源码 ↗</a></div>
+  </article>
+  <article class="project study-project" data-category="engineering llm">
+    <div><div class="project-label"><span class="mono">07 / WEB APPLICATION</span><span class="badge">公开源码 · 前端原型</span></div><h3>学习记录与 AI 答疑工具</h3><p>React + TypeScript 实现学习计划、错题记录与数据备份；默认启发式答疑，可配置兼容接口。</p></div>
+    <a class="text-link" href="https://github.com/5503gj/kaogong-study-admin" target="_blank" rel="noopener noreferrer">浏览项目代码 ↗</a>
+  </article>
+ </div>
+ <aside class="research-note"><span class="mono">EXPLORING NOW</span><div><h3>LLM × 分子性质预测</h3><p>围绕 QED 指标，探索大语言模型对科学概念的理解与数值预测能力。当前处于前期调研与实验方案阶段。</p></div><span class="note-status">前期探索</span></aside>
 </section>
 
-<!-- 求职方向 -->
-<section id="roles" style="background:var(--bg-soft);">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <div class="kicker">Role fit</div>
-      <h2>我能为哪些岗位创造价值</h2>
-      <p>同一套经历按岗位语言重新组织，方便招聘方快速判断匹配度；正式投递统一使用下方 PDF 综合简历。</p>
-    </div>
-    <div class="role-grid">
-      <article class="role-card reveal">
-        <span class="role-no">01</span>
-        <h3>产品运营 / 用户运营</h3>
-        <p>把用户反馈、活动协同和数据结果整理成需求优先级与运营动作。</p>
-        <div class="tag-row"><span class="tag">需求分析</span><span class="tag">用户反馈</span><span class="tag">活动协调</span></div>
-      </article>
-      <article class="role-card reveal">
-        <span class="role-no">02</span>
-        <h3>数据运营 / 商业分析</h3>
-        <p>覆盖采集、清洗、分析、可视化和报告表达，能够从数据中给出下一步建议。</p>
-        <div class="tag-row"><span class="tag">数据清洗</span><span class="tag">可视化</span><span class="tag">业务洞察</span></div>
-      </article>
-      <article class="role-card reveal">
-        <span class="role-no">03</span>
-        <h3>AI 产品 / AI 应用</h3>
-        <p>理解 RAG、视觉识别和 AI 工具链，能完成场景拆解、原型验证与边界说明。</p>
-        <div class="tag-row"><span class="tag">Prompt</span><span class="tag">RAG</span><span class="tag">原型验证</span></div>
-      </article>
-      <article class="role-card reveal">
-        <span class="role-no">04</span>
-        <h3>功能测试 / 交付支持</h3>
-        <p>有平台功能测试、接口联调、异常排查和现场实施经历，重视边界与可复现性。</p>
-        <div class="tag-row"><span class="tag">测试用例</span><span class="tag">缺陷定位</span><span class="tag">MES 实施</span></div>
-      </article>
-    </div>
-  </div>
+<section class="experience-section" id="experience"><div class="wrap section">
+ <div class="section-head"><div><p class="eyebrow">EXPERIENCE</p><h2>把技术放进业务问题。</h2></div><p>数据处理、接口联调与功能验证，<br>来自真实的实习场景。</p></div>
+ <div class="experience-row"><div class="experience-date mono">2026.05 — 2026.08</div><div><h3>深圳市前海中软信息技术有限公司</h3><span class="role">实习生 · MES 系统交付</span><p>梳理需求清单，参与前后端联调，借助 AI 工具完成多模块数据连接与前端更新。针对薄 PCB 人工计数的漏放、多放风险，提出称重校验环节，相关功能已上线。</p></div><span class="experience-tag">业务 → 实现</span></div>
+ <div class="experience-row"><div class="experience-date mono">2025.04 — 2025.05</div><div><h3>四川华迪信息技术有限公司</h3><span class="role">实习生 · 数据分析平台</span><p>参与电影数据平台的数据采集、清洗与可视化。设计覆盖正常、异常、边界场景的测试用例，验证平台功能。</p></div><span class="experience-tag">数据 → 验证</span></div>
+ <div class="experience-row"><div class="experience-date mono">2024.03 — 2024.06</div><div><h3>北京中电科电子装备有限公司</h3><span class="role">实习生 · 设备数据分析</span><p>整合 5 类碳化硅设备的 10 万+条数据，制定清洗规则，参与故障数据分析与数据模型建立，支持设备管理决策。</p></div><span class="experience-tag">数据 → 分析</span></div>
+</div></section>
+
+<section class="section wrap about" id="about">
+ <div><p class="eyebrow">ABOUT & TOOLKIT</p><h2>以数据科学为起点，<br>持续靠近应用。</h2><p class="about-intro">我的经历连接着研究实验与应用原型：既关注模型如何评估，也关注它如何通过接口、交互和业务流程被使用。</p><p>希望在 AI 开发、机器学习与 LLM 应用岗位继续积累经验，提升独立编程、实验分析与工程实现能力。</p>
+ <div class="education"><div><span class="mono">2026 — 2027</span><b>香港城市大学</b><p>数据科学 · 硕士研究生在读<br>预计 2027 年 6 月毕业</p></div><div><span class="mono">2022 — 2026</span><b>华中农业大学</b><p>数据科学与大数据技术 · 本科</p></div></div></div>
+ <div class="skill-list"><div><span class="mono">01 / DATA & MODELS</span><h3>数据与模型实践</h3><p>数据采集、清洗、标注规范<br>训练验证、mAP 分析、对照实验<br>Sentence-BERT、检索增强</p></div><div><span class="mono">02 / APPLICATIONS</span><h3>应用与工具</h3><p>Python / OpenCV / Gradio<br>Ollama / FastAPI / WebSocket<br>React / TypeScript 项目实践</p></div><div><span class="mono">03 / LEARNING</span><h3>持续学习</h3><p>LLM、RAG、Agent 的基本概念<br>分子图增强与 LLM 科学预测<br>模型评估与工程实现</p></div></div>
 </section>
-
-<!-- 教育 -->
-<section id="education" style="background:var(--bg-soft);">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <div class="kicker">Education</div>
-      <h2>教育背景</h2>
-      <p>数据科学科班出身，本科 211、硕士 QS 52，技术底子扎实但不浮夸。</p>
-    </div>
-    <div class="timeline">
-      <div class="tl-item reveal">
-        <h4>香港城市大学（CityU · QS 52）</h4>
-        <div class="meta">数据科学 · 硕士（Incoming）｜ 2026.09 – 2027.06（预计）</div>
-        <p>相关课程：数据探索与可视化（EDA）、统计机器学习、数据存储与检索、数据科学研究项目。</p>
-      </div>
-      <div class="tl-item reveal">
-        <h4>华中农业大学（211 院校）</h4>
-        <div class="meta">数据科学与大数据技术 · 本科 ｜ 2022.09 – 2026.06 ｜ GPA 3.43/4.0 · 雅思 6.5</div>
-        <p>主修：数据结构、机器学习、人工智能、计算机组成与结构、非结构化数据库、大数据采集与储存。语言：英语四六级、普通话二级甲等。</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 实习 -->
-<section id="experience">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <div class="kicker">Experience</div>
-      <h2>实习经历</h2>
-      <p>三段实习分别落在数据分析、平台测试与系统实施，恰好覆盖了"数据 → 产品 → 落地"的完整链条。</p>
-    </div>
-    <div class="grid grid-2">
-      <div class="card reveal">
-        <div class="top">
-          <div><h3>深圳市前海中软信息技术有限公司</h3><div class="role">MES 系统实施实习生</div><div class="exp-company">客户项目：珠海志博信 MES 生产执行系统 · 驻场</div></div>
-          <span class="period">2026.05 – 2026.08</span>
-        </div>
-        <ul>
-          <li>参与珠海志博信 MES 生产执行系统开发与现场支持，负责前后端联调、前端页面数据展示优化、后端服务逻辑与 MySQL 数据库连接维护。</li>
-          <li>梳理前端页面、后端接口与数据库的数据交互关系，协助排查页面显示、数据读取与系统连接异常。</li>
-          <li>深入车间调研设备运行与通信，结合现场网络完成端口号配置与问题修复，保障数据传输稳定。</li>
-        </ul>
-      </div>
-      <div class="card reveal">
-        <div class="top">
-          <div><h3>四川华迪信息技术有限公司</h3><div class="role">数据分析 / 功能测试实习生</div><div class="exp-company">项目：基于大数据的电影数据分析平台</div></div>
-          <span class="period">2025.04 – 2025.05</span>
-        </div>
-        <ul>
-          <li>参与基于大数据的电影数据分析项目，负责网站平台架构、功能测试与数据分析模块协作开发。</li>
-          <li>围绕电影类型、评分、热度、上映信息等完成数据采集、清洗、整理与结构化，支撑趋势分析与可视化。</li>
-          <li>参与网站数据展示与模块测试，检查页面显示 / 数据加载 / 功能跳转，反馈系统问题提升可用性。</li>
-        </ul>
-      </div>
-      <div class="card reveal">
-        <div class="top">
-          <div><h3>北京中电科电子装备有限公司</h3><div class="role">数据分析实习生</div><div class="exp-company">业务场景：减薄机在碳化硅衬底段应用</div></div>
-          <span class="period">2024.03 – 2024.06</span>
-        </div>
-        <ul>
-          <li>负责减薄机在碳化硅衬底段应用的设备运行数据、工艺参数与故障信息收集整理，完成数据清洗、字段归类与异常梳理。</li>
-          <li>参与设备故障数据分析与数据模型建设，建立数据化分析思路，为运行监测与后续大数据分析奠基。</li>
-          <li>接触半导体装备与碳化硅衬底减薄场景，理解工业设备数据在故障定位、工艺优化与设备维护中的作用。</li>
-        </ul>
-      </div>
-      <div class="card reveal">
-        <div class="top">
-          <div><h3>能力沉淀</h3><div class="role">从三段实习中长出来的</div></div>
-        </div>
-        <ul>
-          <li>能站在用户 / 业务侧翻译需求，也能跟技术侧对齐实现边界。</li>
-          <li>熟悉数据从采集到分析到报告的全流程，敢自己动手做。</li>
-          <li>驻场与跨团队协作经验，能推进、能兜底、能写清结论。</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 项目 -->
-<section id="projects" style="background:var(--bg-soft);">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <div class="kicker">Projects</div>
-      <h2>项目与研究经历</h2>
-      <p>这里完整保留我的 4 个公开作品、1 个实习项目与 5 个 AI / CV / NLP 研究专题；公开项目重点展示，研究内容按实际参与范围表述。</p>
-    </div>
-    <div class="grid grid-2">
-      <!-- ShuttleKit 特色卡 -->
-      <div class="card project-card feature reveal">
-        <div class="visual"><span class="badge2">ShuttleKit · 羽毛球装备推荐与球场分析</span></div>
-        <div>
-          <h3>ShuttleKit —— 羽毛球智能装备推荐与球场分析工具包</h3>
-          <div class="role">个人开源项目 · Python / OpenCV / 推荐系统</div>
-          <ul>
-            <li>用 OpenCV 实现球场灯光评估、场地线检测、球速测算、比赛统计四大视觉模块。</li>
-            <li>搭建装备知识库 + 三维匹配推荐引擎，并设计 LLM 顾问骨架（无 Key 时回退规则引擎）。</li>
-            <li>爬虫接入真实装备数据（intobadminton 结构化商品），诚实处理缺失价格等脏数据。</li>
-            <li>54 项单元测试全通过，已在 GitHub 公开，是"技术落地到业务场景"的完整样本。</li>
-          </ul>
-          <div class="project-links">
-            <a href="https://github.com/5503gj/shuttlekit" target="_blank" rel="noopener">★ ShuttleKit 仓库 ↗</a>
-            <a href="#contact">了解协作方式</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Photo Style Gallery 特色卡 -->
-      <div class="card project-card lineart-project reveal">
-        <div class="visual"><span class="badge2">Photo Style Gallery · 图片风格实验室</span></div>
-        <div>
-          <h3>Photo Style Gallery —— 图片风格实验室</h3>
-          <div class="role">个人开源项目 · Python / OpenCV / Gradio</div>
-          <ul>
-            <li>构建本地图片处理网站，支持上传随手拍并应用简约线条、极简保真、编辑感抽象、胶片和海报等 8 种可调风格。</li>
-            <li>使用 OpenCV 完成线稿化与风格滤镜处理，支持大图自动缩放；图片在本地处理，不上传原图。</li>
-            <li>配套可复用的 photo-to-lineart-skill、基础自动化测试和参数报告，体现从图像处理到产品交互的完整落地。</li>
-          </ul>
-          <div class="project-links">
-            <a href="https://github.com/5503gj/photo-style-gallery" target="_blank" rel="noopener">★ Photo Style Gallery 仓库 ↗</a>
-            <a href="resume/郭嘉辉的简历.pdf" download>下载 PDF 简历</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 剧本杀游戏特色卡 -->
-      <div class="card project-card feature reveal">
-        <div class="visual"><span class="badge2">剧本杀游戏 · 多场景关系驱动 NPC</span></div>
-        <div>
-          <h3>剧本杀游戏 —— 多剧本关系驱动互动体验</h3>
-          <div class="role">个人游戏化原型 · HTML / JavaScript / 本地 Qwen</div>
-          <ul>
-            <li>围绕情感本、推理本等剧本杀场景，设计“场景—说话者—对话对象—关系规则”的 NPC 互动流程。</li>
-            <li>以《流芳》等情感本为验证场景，整理角色、NPC 与多幕剧情状态，建立父子、兄弟、父女和同盟等差异化回复规则。</li>
-            <li>接入本地 Qwen 小模型生成短回复；模型不可用时自动回退到关系规则引擎，保证体验可运行。</li>
-            <li>公开仓库只保留原创交互代码与关系摘要，不上传剧本原文、扫描件或线索图片，兼顾作品展示与版权边界。</li>
-          </ul>
-          <div class="project-links">
-            <a href="https://github.com/5503gj/mystery-npc-lab" target="_blank" rel="noopener">★ mystery-npc-lab 仓库 ↗</a>
-            <a href="https://github.com/5503gj/mystery-npc-lab" target="_blank" rel="noopener">查看实现说明</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 考公备考系统特色卡 -->
-      <div class="card project-card lineart-project reveal">
-        <div class="visual"><span class="badge2">Kaogong Study Admin · 在线备考系统</span></div>
-        <div>
-          <h3>考公备考系统 —— 从学习记录到错题复盘的个人工作台</h3>
-          <div class="role">个人产品项目 · React / TypeScript / Vite / 微信小程序脚手架</div>
-          <ul>
-            <li>围绕“计划—学习记录—每日任务—错题分析—AI 答疑”设计完整备考闭环，包含看板、专注模式、题库和数据备份。</li>
-            <li>默认使用浏览器本地数据，支持注册、登录、学习时长统计、错题录入与 JSON 导入导出，降低后端部署成本。</li>
-            <li>提供兼容 OpenAI 协议的 AI 配置入口，并配套微信小程序迁移脚手架，体现从网页原型到多端落地的产品思路。</li>
-            <li>已通过 GitHub Actions 发布到公网，可直接演示：数据按用户保存在本地浏览器，互不干扰。</li>
-          </ul>
-          <div class="project-links">
-            <a href="https://5503gj.github.io/kaogong-study-admin/" target="_blank" rel="noopener">▶ 在线体验 ↗</a>
-            <a href="https://github.com/5503gj/kaogong-study-admin" target="_blank" rel="noopener">★ GitHub 仓库 ↗</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-group-title reveal">研究 / 数据专题 · 按实际参与范围表述</div>
-
-      <div class="card project-card reveal">
-        <div class="top"><div><h3>猫外周血白细胞检测</h3><div class="role">研究 · YOLOv10 / CV</div></div></div>
-        <ul>
-          <li>参与基于 YOLOv10 的猫外周血白细胞自动检测研究，研究对象包括中性粒细胞、淋巴细胞与单核细胞。</li>
-          <li>负责数据集整理、标注规范协助与实验结果汇总，围绕小目标检测、类别区分和误检漏检进行分析。</li>
-          <li>成果发表于《畜牧兽医学报》（中文核心期刊），论文题目为《基于深度学习的猫外周血白细胞自动识别方法建立及应用评价》。</li>
-        </ul>
-      </div>
-
-      <div class="card project-card reveal">
-        <div class="top"><div><h3>NLP 关系抽取 · 检索增强</h3><div class="role">研究 · RAG / Sentence-BERT</div></div></div>
-        <ul>
-          <li>设计检索增强（RAG）关系抽取流程，用 Sentence-BERT 句向量完成候选句检索、相似度匹配与上下文证据筛选。</li>
-          <li>深入理解"切分 → 向量化 → 检索 → 拼接 → 生成"的 RAG 架构，可迁移至大模型应用设计。</li>
-        </ul>
-      </div>
-
-      <div class="card project-card reveal">
-        <div class="top"><div><h3>人脸微表情识别</h3><div class="role">研究 · Mamba 架构</div></div></div>
-        <ul>
-          <li>研究 Mamba 架构在人脸微表情识别中的应用，聚焦局部动态特征、短时时序建模与分类稳定性。</li>
-          <li>积累模式识别与深度学习实验（数据预处理、样本划分、时序特征提取与评估）经验。</li>
-        </ul>
-      </div>
-
-      <div class="card project-card reveal">
-        <div class="top"><div><h3>医学肺部影像识别</h3><div class="role">研究 · 医疗 CV</div></div></div>
-        <ul>
-          <li>面向 COVID-19 肺部医学影像完成数据预处理、特征提取、模型训练与结果分析。</li>
-          <li>探索深度学习在肺部异常识别中的辅助诊断应用，补充医学影像处理经验。</li>
-        </ul>
-      </div>
-
-      <div class="card project-card reveal">
-        <div class="top"><div><h3>道路场景图像研究</h3><div class="role">研究 · 视觉感知</div></div></div>
-        <ul>
-          <li>针对道路场景图像开展目标 / 场景分析，完成图像清洗、标注整理与模型实验。</li>
-          <li>积累道路场景理解与视觉数据处理经验，支撑智能交通 / 视觉感知方向。</li>
-        </ul>
-      </div>
-
-      <div class="card project-card reveal">
-        <div class="top"><div><h3>电影数据分析平台</h3><div class="role">数据产品 · 可视化 · 华迪实习项目</div></div></div>
-        <ul>
-          <li>参与基于大数据的电影数据分析平台建设，负责网站架构、功能测试与数据分析模块协作。</li>
-          <li>形成"采集 → 清洗 → 分析 → 可视化 → 网页展示"完整链路（2025.04 – 2025.05）。</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 荣誉 -->
-<section id="awards">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <div class="kicker">Awards</div>
-      <h2>竞赛与荣誉</h2>
-      <p>覆盖 IT 技能、人工智能、系统能力、数学、商业与翻译的九项校级及以上竞赛成果。</p>
-    </div>
-    <div class="grid grid-3">
-      <div class="card reveal"><div class="top"><h3>"传智杯"全国 IT 技能大赛</h3><span class="period">一等奖</span></div><p style="color:var(--ink-soft);font-size:14.5px;">全国 IT 技能综合竞赛最高奖，印证工程与实践能力。</p></div>
-      <div class="card reveal"><div class="top"><h3>全国大学生人工智能竞赛</h3><span class="period">二等奖</span></div><p style="color:var(--ink-soft);font-size:14.5px;">AI 方向竞赛奖项，与研究方向形成呼应。</p></div>
-      <div class="card reveal"><div class="top"><h3>全国大学生计算机系统能力大赛</h3><span class="period">三等奖</span></div><p style="color:var(--ink-soft);font-size:14.5px;">计算机系统底层能力佐证。</p></div>
-      <div class="card reveal"><div class="top"><h3>全国大学生数学竞赛</h3><span class="period">三等奖</span></div><p style="color:var(--ink-soft);font-size:14.5px;">数学基础扎实，支撑数据建模与分析。</p></div>
-      <div class="card reveal"><div class="top"><h3>全国大学生数学创新思维挑战赛</h3><span class="period">三等奖</span></div><p style="color:var(--ink-soft);font-size:14.5px;">数学建模与创新思维证据。</p></div>
-      <div class="card reveal"><div class="top"><h3>全国大学生算法设计编程挑战赛</h3><span class="period">优秀奖</span></div><p style="color:var(--ink-soft);font-size:14.5px;">算法与编程实践参与证明。</p></div>
-      <div class="card reveal"><div class="top"><h3>全国高校商务翻译（英语）能力</h3><span class="period">三等奖</span></div><p style="color:var(--ink-soft);font-size:14.5px;">英语应用能力佐证，适配英文授课与文献阅读。</p></div>
-      <div class="card reveal"><div class="top"><h3>全国大学生数学建模竞赛</h3><span class="period">省三等奖</span></div><p style="color:var(--ink-soft);font-size:14.5px;">数据分析与建模能力佐证。</p></div>
-      <div class="card reveal"><div class="top"><h3>电子商务“三创赛”</h3><span class="period">校二等奖</span></div><p style="color:var(--ink-soft);font-size:14.5px;">创新、创意与创业实践，补充产品和商业视角。</p></div>
-      <div class="card reveal"><div class="top"><h3>中文核心期刊论文</h3><span class="period">1 篇</span></div><p style="color:var(--ink-soft);font-size:14.5px;">参与猫血细胞检测研究，负责数据整理与结果汇总，已发表。</p></div>
-      <div class="card reveal"><div class="top"><h3>羽毛球二级裁判员</h3><span class="period">持证</span></div><p style="color:var(--ink-soft);font-size:14.5px;">规则感与细致度，可迁移到功能测试的用例设计。</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- 技能 -->
-<section id="skills" style="background:var(--bg-soft);">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <div class="kicker">Skills</div>
-      <h2>技能矩阵</h2>
-      <p>如实标注水平：熟悉 / 了解，编码类为基础级、能辅助，绝不写"精通"。</p>
-    </div>
-    <div class="skills-wrap">
-      <div class="skill-group reveal">
-        <h4><span class="ic">◆</span>产品 / 运营能力</h4>
-        <div class="chips">
-          <span class="chip b">需求分析</span>
-          <span class="chip b">用户反馈整理</span>
-          <span class="chip b">活动策划与协调</span>
-          <span class="chip b">数据驱动决策</span>
-          <span class="chip b">Prompt 工程</span>
-          <span class="chip b">RAG 流程设计</span>
-          <span class="chip b">AI 应用原型</span>
-          <span class="chip">用例 / 缺陷管理</span>
-        </div>
-      </div>
-      <div class="skill-group reveal">
-        <h4><span class="ic">◆</span>测试 / 交付支持</h4>
-        <div class="chips">
-          <span class="chip b">功能测试</span>
-          <span class="chip b">测试用例</span>
-          <span class="chip b">缺陷复现与反馈</span>
-          <span class="chip">正常 / 异常 / 边界场景</span>
-          <span class="chip">页面与数据校验</span>
-          <span class="chip">接口联调</span>
-          <span class="chip">现场问题排查</span>
-        </div>
-      </div>
-      <div class="skill-group reveal">
-        <h4><span class="ic">◆</span>编程与数据（基础 / 能辅助）</h4>
-        <div class="chips">
-          <span class="chip">Python</span>
-          <span class="chip">SQL</span>
-          <span class="chip">Excel / PPT</span>
-          <span class="chip">MATLAB / LINGO</span>
-          <span class="chip">数据清洗与建模</span>
-          <span class="chip">可视化与报告</span>
-          <span class="chip">AI 工具链</span>
-        </div>
-      </div>
-      <div class="skill-group reveal">
-        <h4><span class="ic">◆</span>AI / 算法（项目级了解）</h4>
-        <div class="chips">
-          <span class="chip b">机器学习</span>
-          <span class="chip b">计算机视觉</span>
-          <span class="chip b">NLP</span>
-          <span class="chip">OpenCV</span>
-          <span class="chip">YOLOv10</span>
-          <span class="chip">Sentence-BERT</span>
-          <span class="chip">Mamba</span>
-        </div>
-      </div>
-      <div class="skill-group reveal">
-        <h4><span class="ic">◆</span>数据库 / 系统与语言</h4>
-        <div class="chips">
-          <span class="chip">MySQL</span>
-          <span class="chip">MongoDB</span>
-          <span class="chip">Linux 基础</span>
-          <span class="chip">接口联调 / MES 实践</span>
-          <span class="chip">网站平台建设</span>
-          <span class="chip">雅思 6.5 / 英语四六级</span>
-          <span class="chip">普通话二级甲等</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 校园 -->
-<section id="campus">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <div class="kicker">Beyond</div>
-      <h2>校园与其他</h2>
-    </div>
-    <div class="campus reveal">
-      <div class="block">
-        <h4>学院学生事务与活动支持 · 学生骨干</h4>
-        <p>参与学院综测计算、评奖评优材料整理与活动协调，负责学生相关数据核对、统计汇总与材料确认；同时参与学生会组织协调，能在多任务场景下完成跨角色沟通、信息整理与活动推进。</p>
-      </div>
-      <div class="block">
-        <h4>羽毛球队队长 · 二级裁判员</h4>
-        <p>担任校队队长并持羽毛球二级裁判证，牵头举办校级羽毛球活动。规则感与细致度，也能迁移到功能测试的用例设计与缺陷定位。</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 简历下载 -->
-<section id="resume">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <div class="kicker">Resume</div>
-      <h2>下载 PDF 简历</h2>
-      <p>统一提供一份正式 PDF 综合简历，可直接用于投递系统、发送给 HR 或打印使用。</p>
-    </div>
-    <div class="resume-grid">
-      <article class="resume-card full featured reveal">
-        <span class="rc-no">首推</span>
-        <h3>PDF 综合版简历</h3>
-        <p>你提供的正式 PDF 版本，适合直接发给 HR、投递系统或打印使用。</p>
-        <a class="btn btn-primary" href="resume/郭嘉辉的简历.pdf" download>下载 PDF 简历 ↓</a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- 联系 -->
-<section id="contact" style="background:var(--bg-soft);">
-  <div class="wrap">
-    <div class="contact reveal">
-      <h2>一起聊聊？</h2>
-      <p>无论是产品 / 运营岗位的实习机会，还是对 ShuttleKit、Photo Style Gallery 这类小项目的合作想法，都欢迎找我。</p>
-      <div class="links">
-        <a href="https://github.com/5503gj" target="_blank" rel="noopener">GitHub ↗</a>
-        <a href="mailto:Guo_gjh@126.com">✉ Guo_gjh@126.com</a>
-        <a href="tel:18811593886">📞 188-1159-3886</a>
-        <a href="resume/郭嘉辉的简历.pdf" download>⬇ 下载 PDF 简历</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="wrap">
-    © 2026 郭嘉辉 · 个人主页 ｜ 由数据科学驱动，用产品思维表达 ｜
-    <a href="https://github.com/5503gj" target="_blank" rel="noopener">GitHub</a>
-  </div>
-</footer>
-
-<button class="totop" id="toTop" aria-label="返回顶部">↑</button>
-
-<script src="assets/js/main.js"></script>
-</body>
-</html>
+<section class="contact wrap" id="contact"><div><p class="eyebrow">LET'S CONNECT</p><h2>让下一次实践，<br>发生在你的团队。</h2><p>期待 AI 开发、ML 与 LLM 应用方向的工作机会。</p></div><div class="contact-links"><a href="mailto:Guo_gjh@126.com"><span>EMAIL</span>Guo_gjh@126.com <b>↗</b></a><a href="https://github.com/5503gj" target="_blank" rel="noopener noreferrer"><span>GITHUB</span>5503gj <b>↗</b></a><a href="assets/guo-jiahui-ai-resume.pdf" download="郭嘉辉_AI开发_ML_LLM_求职简历.pdf"><span>RESUME</span>下载中文简历 <b>↓</b></a></div></section>
+</main>
+<footer class="wrap"><span>© 2026 郭嘉辉</span><p>研究与实习信息据个人简历；开源实现以所链接仓库为准。</p><a href="#top">回到顶部 ↑</a></footer>
+<dialog id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span class="mono">PROJECT NOTES</span><button class="close-button" aria-label="关闭项目详情">关闭 ×</button></div><div id="dialog-content"></div></dialog>
+</body></html>
