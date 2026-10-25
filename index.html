@@ -33,13 +33,13 @@
 
 <section class="section wrap" id="projects">
  <div class="section-head"><div><p class="eyebrow">SELECTED WORK</p><h2>让项目说明能力。</h2></div><p>从研究实验到公开原型，<br>看问题、方法与实现边界。</p></div>
+ <div class="release-note"><span>2026.10 / 四个应用已升级</span><a href="release.html">查看功能、验证与企业使用差距 ↗</a></div>
  <div class="filters" aria-label="按方向筛选项目"><button class="active" data-filter="all" aria-pressed="true">全部项目</button><button data-filter="llm" aria-pressed="false">LLM / RAG</button><button data-filter="ml" aria-pressed="false">机器学习</button><button data-filter="engineering" aria-pressed="false">应用工程</button><span id="result-count" aria-live="polite">7 个项目</span></div>
  <div class="project-grid">
   <article class="project featured" data-category="llm engineering">
     <div class="project-label"><span class="mono">01 / LLM APPLICATION</span><span class="badge">公开源码 · 原型</span></div>
-    <h3>AI NPC 互动实验室</h3><p class="project-desc">把角色设定、关系与已知线索组织成上下文，让本地模型参与对话。</p>
-    <div class="pipeline" aria-label="NPC 对话流程示意"><div><span>INPUT</span><b>角色 / 场景 / 线索</b></div><i>↓</i><div><span>CONTEXT</span><b>关系规则 + 最近 8 条对话</b></div><i>↓</i><div class="model-node"><span>INFERENCE</span><b>Ollama · Qwen</b></div><div class="pipeline-result"><span>模型回复</span><span>不可用 → 规则回退</span></div></div>
-    <p class="caption">根据公开代码绘制的流程示意</p>
+    <h3>AI NPC 互动实验室</h3><p class="project-desc">本地模型对话与证据调查工作台：分清事实、角色说法和笔记，手动关联线索，把助手建议带回对话核对。</p>
+<figure class="release-preview"><a href="assets/previews/npc.webp" target="_blank" rel="noopener noreferrer" aria-label="打开NPC调查工作台：线索、角色说法、证据关联与调查助手大图"><img src="assets/previews/npc.webp" alt="NPC调查工作台：线索、角色说法、证据关联与调查助手" loading="lazy" width="1440" height="1000"><span>查看实机大图 ↗</span></a><figcaption>规则模式实机截图 · 8 Python + 3 JS 测试及 2 组浏览器流程通过</figcaption></figure>
     <div class="tags"><span>Python</span><span>Ollama</span><span>Context Design</span></div>
     <div class="project-bottom"><button data-detail="npc">查看实现思路 <span>↗</span></button><a href="https://github.com/5503gj/mystery-npc-lab" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
   </article>
@@ -68,20 +68,18 @@
   </article>
   <article class="project small-project" data-category="engineering llm">
     <div class="project-label"><span class="mono">05 / PYTHON · API</span><span class="badge">公开源码 · MVP</span></div>
-    <h3>ShuttleKit</h3><p>模块化羽毛球分析工具。包含 FastAPI 接口、WebSocket 会话接口，以及器材规则推荐和可选 LLM 顾问；实时大屏广播仍待完善。</p>
+    <h3>ShuttleKit</h3><p>实时会话与训练复盘：轨迹回放、来源与标定核对、目标练习清单、JSON / Markdown 导出和只读同步。</p>
+<figure class="release-preview"><a href="assets/previews/shuttle.webp" target="_blank" rel="noopener noreferrer" aria-label="打开ShuttleKit轨迹回放与训练复盘教练大图"><img src="assets/previews/shuttle.webp" alt="ShuttleKit轨迹回放与训练复盘教练" loading="lazy" width="1440" height="1000"><span>查看实机大图 ↗</span></a><figcaption>模拟坐标实机截图 · 89 Python 测试及 2 组浏览器流程通过</figcaption></figure>
     <div class="tags"><span>FastAPI</span><span>WebSocket</span></div>
     <div class="project-bottom"><button data-detail="shuttle">查看工程实现 <span>↗</span></button><a href="https://github.com/5503gj/shuttlekit" target="_blank" rel="noopener noreferrer">源码 ↗</a></div>
   </article>
   <article class="project small-project" data-category="engineering">
     <div class="project-label"><span class="mono">06 / IMAGE PROCESSING</span><span class="badge">公开源码</span></div>
-    <h3>Photo Style Gallery</h3><p>本地图像处理工具。以 OpenCV 实现线稿、胶片等风格，提供 Gradio 界面、大图缩放与基础自动化测试。</p>
+    <h3>FORM · 影像风格工坊</h3><p>从实际主色和轮廓分析出发，一次生成三款试片；支持前后对比、参数微调、轮廓 SVG 与可复现的 ZIP 套装。</p><figure class="release-preview"><a href="assets/previews/photo.webp" target="_blank" rel="noopener noreferrer" aria-label="打开FORM影像工坊的三款试片、前后对比、像素分析和导出大图"><img src="assets/previews/photo.webp" alt="FORM影像工坊的三款试片、前后对比、像素分析和导出" loading="lazy" width="1440" height="1000"><span>查看实机大图 ↗</span></a><figcaption>程序绘制示例实机截图 · 36 Python 测试及浏览器完整流程通过</figcaption></figure>
     <div class="tags"><span>OpenCV</span><span>Gradio</span></div>
     <div class="project-bottom"><button data-detail="photo">查看处理与测试 <span>↗</span></button><a href="https://github.com/5503gj/photo-style-gallery" target="_blank" rel="noopener noreferrer">源码 ↗</a></div>
   </article>
-  <article class="project study-project" data-category="engineering llm">
-    <div><div class="project-label"><span class="mono">07 / WEB APPLICATION</span><span class="badge">公开源码 · 前端原型</span></div><h3>学习记录与 AI 答疑工具</h3><p>React + TypeScript 实现学习计划、错题记录与数据备份；默认启发式答疑，可配置兼容接口。</p></div>
-    <a class="text-link" href="https://github.com/5503gj/kaogong-study-admin" target="_blank" rel="noopener noreferrer">浏览项目代码 ↗</a>
-  </article>
+  <article class="project study-project" data-category="engineering llm"><div><div class="project-label"><span class="mono">07 / STUDY PILOT</span><span class="badge">公开源码 · 可体验</span></div><h3>Study Pilot · 七日学习规划</h3><p>读取学习与错题画像，按预算和策略生成计划，预览勾选后确认写入，支持日历导出、复习队列与 Ctrl/⌘K 命令面板。</p><p class="caption">本地规则工具，不将排程建议称为模型预测；数据保存在当前浏览器。</p><div class="tags"><span>React / TypeScript</span><span>Atomic Storage</span><span>35 单元 + 7 E2E</span></div><div class="project-bottom"><button data-detail="study">查看规划与验证 ↗</button><a href="https://5503gj.github.io/kaogong-study-admin/" target="_blank" rel="noopener noreferrer">在线体验 ↗</a><a href="https://github.com/5503gj/kaogong-study-admin" target="_blank" rel="noopener noreferrer">源码 ↗</a></div></div><figure class="release-preview"><a href="assets/previews/study.webp" target="_blank" rel="noopener noreferrer" aria-label="打开Study Pilot七日计划预览与工具执行记录大图"><img src="assets/previews/study.webp" alt="Study Pilot七日计划预览与工具执行记录" loading="lazy" width="1440" height="1000"><span>查看实机大图 ↗</span></a><figcaption>实机截图 · 确认后批量写入，重复操作不新增</figcaption></figure></article>
  </div>
  <aside class="research-note"><span class="mono">EXPLORING NOW</span><div><h3>LLM × 分子性质预测</h3><p>围绕 QED 指标，探索大语言模型对科学概念的理解与数值预测能力。当前处于前期调研与实验方案阶段。</p></div><span class="note-status">前期探索</span></aside>
 </section>
