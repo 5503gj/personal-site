@@ -1,11 +1,11 @@
 const projects = {
   npc: {
-    title: "AI NPC 互动实验室", tag: "LLM 应用 / 公开源码 / 原型",
+    title: "AI NPC 互动实验室", tag: "在线规则剧情 / 可选本地模型 / 证据调查",
     sections: [
       ["场景", "围绕角色与关系开展互动对话。模型需要根据当前对象、场景和已公开线索作答，同时保留程序对剧情状态的控制。"],
-      ["公开代码中的实现", ["Python 本地服务调用 Ollama，服务端核对场景、角色和公开线索ID；失败时明确回退规则。", "调查工作台将已发现线索、实际角色回复、玩家笔记分开；支持固定、手动关联、问题建议与 JSON / Markdown 导出。", "四个本地工具读取当前证据并列出依据，不自动判定凶手，不把角色说法升级成事实。"]],
-      ["当前边界", "8 Python + 3 JS 单元测试及两组浏览器流程验证工程行为，不证明真实模型叙事质量。调查笔记仅保留在本页会话，刷新清空；长期存储、账号和模型剧透/一致性评测仍待完成。"]
-    ], url: "https://github.com/5503gj/mystery-npc-lab", source: "依据仓库 README 与 server.py，核对于 2026-10-25。"
+      ["公开代码中的实现", ["网页直接体验规则剧情，免安装且不请求本地API；Python服务版保留可选Ollama与场景/角色/线索ID校验。", "调查工作台将已发现线索、实际角色回复、玩家笔记分开；支持固定、手动关联、问题建议与 JSON / Markdown 导出。", "四个本地工具读取当前证据并列出依据，不自动判定凶手，不把角色说法升级成事实。"]],
+      ["当前边界", "8 Python + 3 JS 单元测试、原有两组及在线浏览器流程验证工程行为，不证明真实模型叙事质量。调查笔记仅保留在本页会话，刷新清空；长期存储、账号和模型剧透/一致性评测仍待完成。"]
+    ], demo: "https://5503gj.github.io/mystery-npc-lab/", url: "https://github.com/5503gj/mystery-npc-lab", source: "依据仓库 README 与 server.py，核对于 2026-10-25。"
   },
   cv: {
     title: "猫外周血白细胞自动检测", tag: "目标检测 / 2026.01 — 2026.07",
@@ -34,18 +34,18 @@ const projects = {
   shuttle: {
     title: "ShuttleKit", tag: "Python / FastAPI / WebSocket / MVP",
     sections: [
-      ["工程实现", ["FastAPI 与 WebSocket 支持带能力令牌的会话读写、只读显示和多端广播。", "训练复盘教练读取最近300点，核对来源与标定，计算窗口统计，再按所选目标编排18分钟练习；支持回放、勾选与导出。", "模拟/设备声明/未验证来源逐点保留；无比例只给px/s，界面场地只是画面轨迹示意。器材推荐维持预算约束与来源标注。"]],
-      ["项目阶段", "实时会话使用进程内存保存，视频分析为轻量 CV MVP。复杂机位下仍需验证与更严格的场地标定；演示数据和估算值不等于专业测量结果。"],
-      ["验证与企业条件", "89 Python 测试及两组浏览器流程覆盖权限、广播、统计、回放、取消与导出。企业使用仍需真实测速真值和误差验证、设备身份、租户隔离、持久化、共享消息总线与运行监控。"]
-    ], url: "https://github.com/5503gj/shuttlekit", source: "依据仓库 README、speed_api.py 与 equipment_kb/ai_advisor.py，核对于 2026-10-25。"
+      ["工程实现", ["FastAPI 与 WebSocket 支持带能力令牌的会话读写、只读显示和多端广播。", "在线版在浏览器运行原Python核心：导入最近300点、回放、核对来源/标定、目标练习、装备推荐与报告导出。", "模拟/设备声明/未验证来源逐点保留；无比例只给px/s，界面场地只是画面轨迹示意。器材推荐维持预算约束与来源标注。"]],
+      ["项目阶段", "在线会话在当前页面内存运行，不跨设备实时同步。浏览器视频最多60秒/50MiB、720p/10Hz采样；共用原候选点算法，不代表专业高速测速。服务版保留WebSocket同步。"],
+      ["验证与企业条件", "89 Python 测试、两项资源回退测试及三组浏览器流程覆盖权限、广播、统计、回放、取消与导出。企业使用仍需真实测速真值和误差验证、设备身份、租户隔离、持久化、共享消息总线与运行监控。"]
+    ], demo: "https://5503gj.github.io/shuttlekit/", url: "https://github.com/5503gj/shuttlekit", source: "依据仓库 README、speed_api.py 与 equipment_kb/ai_advisor.py，核对于 2026-10-25。"
   },
   photo: {
     title: "FORM · 影像风格工坊", tag: "Python / OpenCV / Gradio / Style Director",
     sections: [
       ["新流程", "读取真实亮度、边缘密度和主色，按用途生成三种风格试片；点击切换、前后拖动或键盘对比，参数可继续微调。"],
-      ["可复现交付", ["导出三张PNG、原图轮廓SVG与ZIP参数清单，保留源图摘要、真实参数与工具耗时。", "10MiB / 1200万像素上传上限、单任务队列、两层临时缓存清理。", "36 Python 测试与真实浏览器完整流程覆盖算法、真实接口、ZIP、缓存、方案切换、下载和手机布局。"]],
-      ["实现边界", "本地图像算法与规则工具，不训练生成模型；SVG是轮廓提取。远程访问会上传服务器；企业使用还需多租户隔离、删除审计、性能基准与真实图片盲评。"]
-    ], url: "https://github.com/5503gj/photo-style-gallery", source: "依据仓库 README、lineart_core.py 与 test_lineart.py，核对于 2026-10-25。"
+      ["可复现交付", ["导出三张PNG、原图轮廓SVG与ZIP参数清单，保留源图摘要、真实参数与工具耗时。", "两版都限制10MiB / 1200万像素；在线版在Worker内计算，服务版另有单任务队列与两层临时缓存清理。", "36 Python 测试、两项资源回退测试与服务/在线浏览器完整流程覆盖算法、真实接口、ZIP、缓存、方案切换、下载和手机布局。"]],
+      ["实现边界", "在线版通过WebAssembly实际执行原Python/OpenCV算法，照片不上传；首次引擎约28MB，随后缓存。SVG是轮廓提取。另保留Gradio服务版，其远程访问会上传到服务器；企业采用仍需真实盲评与运行保障。"]
+    ], demo: "https://5503gj.github.io/photo-style-gallery/", url: "https://github.com/5503gj/photo-style-gallery", source: "依据仓库 README、lineart_core.py 与 test_lineart.py，核对于 2026-10-25。"
   },
   study: {
     title: "Study Pilot · 七日学习规划", tag: "React / TypeScript / 本地规则工具",
@@ -72,6 +72,7 @@ document.querySelectorAll("[data-detail]").forEach(button => button.addEventList
     if (Array.isArray(body)) { const list = document.createElement("ul"); body.forEach(t => list.append(node("li", t))); content.append(list); }
     else content.append(node("p", body));
   });
+  if (project.demo) { const a = node("a", "直接在线体验 ↗", "dialog-link experience-link"); a.href = project.demo; a.target="_blank";a.rel="noopener noreferrer";content.append(a); }
   if (project.url) { const a = node("a", "在 GitHub 查看源码 ↗", "dialog-link"); a.href = project.url; a.target = "_blank"; a.rel = "noopener noreferrer"; content.append(a); }
   content.append(node("p", project.source, "source-note"));
   dialog.showModal(); dialog.scrollTop = 0; document.body.classList.add("modal-open");
